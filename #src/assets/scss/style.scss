@@ -1,3 +1,7 @@
 @import 'normalize';
 @import 'globals';
 @import 'header';
+
+.body .light {
+    display: none;
+}

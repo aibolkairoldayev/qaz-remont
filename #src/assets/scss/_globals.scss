@@ -1,11 +1,17 @@
-html, body { height: 100%; overflow-x: hidden}
+* {
+  box-sizing: border-box;
+}
+html, body { height: 100%; overflow-x: hidden;}
 body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; background: #fff;}
+:root {
+  --color-1: #2B2A28;
+  --color-2: #fff;
+  --color-3: #fff;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   --bs-gutter-x: 0rem;
-  font-family: "Inter", sans-serif;
-font-family: "Rubik", sans-serif;
 
   @media (max-width: 1200px) {
     max-width: 960px;
@@ -55,3 +61,24 @@ font-family: "Rubik", sans-serif;
   background: rgba(97,207,128,0.38);
 }
 
+.main {
+  padding-top: 125px;
+}
+
+.body {
+  background-color: #2B2A28;
+  .main-title {
+    color: var(--color-3, #FFF);    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .white-btn {
+    border-radius: 20px;
+    background: var(--color-2, #FFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

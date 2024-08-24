@@ -1,3 +1,250 @@
+.body .footer {
+  border-top: 2px solid var(--color-2, #FFF);
+}
+
+.body .footer__top {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  padding: 30px 0;
+}
+
+.body .footer__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+}
+
+.body .footer__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.body .footer__left {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+.body .footer__left--reks {
+  border-radius: 14px;
+  border: 1px solid #FFF;
+  padding: 14px 24px;
+}
+
+.body .footer__left--reks span {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  /* 19.6px */
+}
+
+.body .footer__left--reks.mobile {
+  display: none;
+}
+
+.body .footer__menu li {
+  margin-bottom: 30px;
+}
+
+.body .footer__menu li a {
+  color: var(--color-3, #FFF);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.body .footer__title {
+  color: var(--color-3, #FFF);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body .footer__text {
+  color: var(--color-2, #FFF);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 35px 0 25px;
+  max-width: 430px;
+}
+
+.body .footer__input {
+  border-radius: 20px;
+  background: #959594;
+  color: var(--color-2, #FFF);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body .footer__input::-webkit-input-placeholder {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body .footer__input::-moz-placeholder {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body .footer__input:-ms-input-placeholder {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body .footer__input::-ms-input-placeholder {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body .footer__input::placeholder {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body .footer__btn {
+  width: 230px;
+  height: 50px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.body .footer__form {
+  margin-bottom: 14px;
+}
+
+.body .footer__policy {
+  max-width: 430px;
+}
+
+.body .footer__policy span {
+  color: var(--color-3, #FFF);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.body .footer__policy a {
+  color: var(--color-3, #FFF);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.body .footer__bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.body .footer__bot p {
+  color: var(--color-3, #FFF);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.body .footer__policy {
+  color: var(--color-2, #FFF);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin: 0 60px;
+}
+
+.body .footer__content {
+  padding-left: 4px;
+}
+
+.body .made {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .made span {
+  color: var(--color-3, #FFF);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 20px;
+}
+
+.body .socials {
+  max-width: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .socials.light {
+  display: none;
+}
+
 .editors b,
 .editors strong {
   font-weight: 600;
