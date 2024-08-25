@@ -62,6 +62,9 @@
                 height: 37px;
                 padding: 10px 30px;
                 box-sizing: border-box;
+                &:hover {
+                    background: #FFF8E8;
+                }
             }
         }
         &__mode {
@@ -73,14 +76,16 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                display: none;
+                height: 0;
+                overflow: hidden;
                 position: absolute;
-                bottom: -20px;
+                bottom: -25px;
                 left: -80px;
                 text-wrap: nowrap;
             }
             img:hover + p {                                      
-                display: block;                                    
+                height: auto;
+                overflow: auto;                                  
             }
         }
         &__date {

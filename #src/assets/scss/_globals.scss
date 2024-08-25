@@ -7,6 +7,7 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
   --color-1: #2B2A28;
   --color-2: #fff;
   --color-3: #fff;
+  --color-9: #0D0D0D;
 }
 .container {
   max-width: 1200px;
@@ -80,5 +81,20 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background: #FFF8E8;
+    }
+  }
+  &.white {
+    background-color: #fff;
+    .dark {
+        display: none;
+    }
+    .light {
+      display: block;
+    }
+    .main-title {
+      color: var(--color-9, #0D0D0D);
+    }
   }
 }

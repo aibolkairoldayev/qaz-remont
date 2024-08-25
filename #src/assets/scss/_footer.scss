@@ -100,20 +100,23 @@
             margin-bottom: 14px;
         }
         &__policy {
-            max-width: 430px;
-            span {
-                color: var(--color-3, #FFF);
-                font-size: 11px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-            a {
-                color: var(--color-3, #FFF);
-                font-size: 11px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+            &--text {
+                max-width: 430px;
+                span {
+                    color: var(--color-3, #FFF);
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                a {
+                    color: var(--color-3, #FFF);
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-decoration: underline;
+                }
             }
         }
         &__bot {
@@ -167,6 +170,74 @@
         align-items: center;
         &.light {
             display: none;
+        }
+    }
+
+    &.white {
+        .footer {
+            border-top: 2px #0D0D0D solid;
+            &__left {
+                &--reks {
+                    border: 1px solid #0D0D0D;
+                    span {
+                        color: var(--color-1, #2B2A28);
+                    }
+                }
+            }
+            &__menu {
+                li {
+                    a {
+                        color: var(--color-1, #2B2A28);
+                    }
+                }
+            }
+            &__title {
+                color: var(--color-1, #2B2A28);
+            }
+            &__text {
+                color: var(--color-1, #2B2A28);
+            }
+            &__input {
+                opacity: 0.5;
+                background: #D0D0D0;
+                color: var(--color-1, #2B2A28);
+                &::placeholder {
+                    color: var(--color-1, #2B2A28);
+                }
+            }
+            &__btn {
+                background: #0D0D0D;
+                color: #FFF;
+            }
+            &__policy {
+                color: var(--color-1, #2B2A28);
+               &--text {
+                span {
+                    color: var(--color-1, #2B2A28);
+                }
+                a {
+                    color: var(--color-1, #2B2A28); 
+                }
+               }
+            }
+            &__bot {
+                p {
+                    color: var(--color-1, #2B2A28); 
+                }
+            }
+        }
+        .socials {
+            &.dark {
+                display: none;
+            }
+            &.light {
+                display: flex;
+            }
+        }
+        .made {
+            span {
+                color: var(--color-1, #2B2A28);
+            }
         }
     }
 }
