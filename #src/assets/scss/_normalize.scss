@@ -62,15 +62,6 @@ img {
     max-width: 100%;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity .4s ease;
-}
-.fade-enter,
-.fade-leave-to {
-    opacity: 0;
-}
-
 .btn-check:focus + .btn,
 .btn:focus {
     box-shadow: none;
@@ -102,46 +93,4 @@ select::-ms-expand {
 ::-webkit-scrollbar-track {
   background-color: transparent;
   //background-color: #ddd;
-}
-@mixin flex($fd, $al, $jf) {
-  display: flex;
-  @if($fd == d) {
-    flex-direction: row;
-  }
-  @else {
-    flex-direction: $fd;
-  }
-  @if($al == d) {}
-  @else {
-    align-items: $al;
-  }
-  @if($jf == d) {}
-  @else {
-    justify-content: $jf;
-  }
-}
-@mixin grid($num, $as, $js, $gg) {
-  display: grid;
-  $b: 1fr;
-  @for $i from 1 through $num - 1 {
-    $b: $b + ' ' + #{1fr};
-  }
-  @if($num == 1) {
-    grid-template-columns: 1fr;
-  }
-  @else {
-    grid-template-columns: #{$b};
-  }
-  @if($as == d) {}
-  @else {
-    align-items: $as;
-  }
-  @if($js == d) {}
-  @else {
-    justify-items: $js;
-  }
-  @if($gg == d) {}
-  @else {
-    grid-gap: #{$gg};
-  }
 }
