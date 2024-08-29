@@ -31,32 +31,6 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
     margin: 0 20px;
   }
 }
-.preloader {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  background: #ffffff;
-  display: flex;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  transition: .4s ease-out;
-  &_wrapper {
-    position: relative;
-    img {
-      z-index: 2;
-      max-width: unset;
-      max-height: unset;
-      width: 150px;
-      @media (max-width: 576px) {
-        width: 70px;
-      }
-    }
-  }
-}
 
 .main {
   padding-top: 125px;
@@ -88,7 +62,53 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
 }
 
 .body {
-  background-color: #2B2A28;
+  .preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    background: var(--color-1, #2B2A28);
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-out;
+    &__circle {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+      svg {
+        path {
+          fill: #000
+        }
+      }
+    }
+    &__spin {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: calc(50% - 125px);
+      left: calc(50% - 125px);
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite;
+      z-index: 5; /* За кругом */
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+      
+    }
+  }
+
   &::selection {
     background: #F3F3F3;
   }
@@ -140,6 +160,33 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
     &::selection {
       background: #191919;
     }
+    .preloader {
+      background-color: #fff;
+      &__spin {
+        svg {
+          path {
+            fill: #0D0D0D;
+          }
+        }
+      }
+      &__circle {
+        background-color: #0D0D0D;
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
   }
 
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

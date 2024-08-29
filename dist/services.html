@@ -44,7 +44,7 @@
                             <span>Заказать звонок</span>
                             <img src="assets/img/icons/phone.svg" alt="phone">
                         </button>
-                        <div class="header__mode">
+                        <div class="header__mode desktop">
                             <img class="dark" src="assets/img/icons/sun.svg" alt="sun">
                             <p class="dark">Включить светлое оформление</p>
                             <img class="light" src="assets/img/icons/moon.svg" alt="moon">
@@ -70,6 +70,44 @@
         </div>
     </div>
 </header>
+<div class="burger">
+    <div class="burger__wrapper"></div>
+    <div class="burger__content">
+        <ul class="burger__menu">
+            <li>
+                <a class="colortext" href="">Дизайн интерьера</a>
+            </li>
+            <li>
+                <a class="colortext" href="">Ремонт под ключ</a>
+            </li>
+            <li>
+                <a class="colortext" href="">Строительство домов</a>
+            </li>
+            <li>
+                <a class="colortext" href="">Система вентиляции</a>
+            </li>
+            <li>
+                <a class="colortext" href="">Мебель под ключ</a>
+            </li>
+        </ul>
+    
+        <div class="burger__mid">
+            <a class="colortext" href="tel:+77080016601">+7 (708) 001-66-01</a>
+            <div class="burger__data">
+                <span class="colortext">ПН-СБ</span>
+                <span class="colortext">9:00-21:00</span>
+            </div>
+        </div>
+    
+        <div class="burger__btn white-btn">Заказать звонок</div>
+        <div class="header__mode mobile">
+            <img class="dark" src="assets/img/icons/sun.svg" alt="sun">
+            <p class="dark colortext">Включить светлое оформление</p>
+            <img class="light" src="assets/img/icons/moon.svg" alt="moon">
+            <p class="light colortext">Включить темное оформление</p>
+        </div>
+    </div>
+</div>
     <main class="main servicesPage">
     <section class="banner2">
         <div class="banner2__bg">
@@ -1359,10 +1397,23 @@
 </footer>
     
 <div class="preloader">
-  <div class="preloader_wrapper">
-    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-      <path d="M0 40C0 62.0914 17.9086 80 40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40Z" fill="white"/>
-      </svg>
+  <div class="preloader__spin">
+    <svg xmlns="http://www.w3.org/2000/svg" width="251" height="252" viewBox="0 0 251 252" fill="none">
+      <path d="M125.5 4.31547C125.5 1.9321 127.433 -0.0077793 129.815 0.0744687C153.125 0.879374 175.783 8.19319 195.224 21.2348C215.862 35.0799 231.948 54.7584 241.447 77.7819C250.946 100.805 253.431 126.14 248.589 150.581C243.746 175.023 231.793 197.474 214.242 215.096C196.69 232.717 174.328 244.717 149.984 249.579C125.639 254.441 100.405 251.945 77.4731 242.409C54.5409 232.872 34.9405 216.722 21.1504 196.002C8.15424 176.474 0.868721 153.713 0.0729956 130.298C-0.00763032 127.925 1.92444 126 4.29835 126C6.67226 126 8.5885 127.925 8.67505 130.297C9.46703 152.005 16.2468 173.098 28.2983 191.207C41.1438 210.508 59.4016 225.551 80.7629 234.435C102.124 243.318 125.63 245.643 148.307 241.114C170.984 236.585 191.814 225.407 208.163 208.993C224.512 192.578 235.646 171.665 240.157 148.898C244.668 126.13 242.353 102.531 233.505 81.0849C224.656 59.6385 209.673 41.3079 190.448 28.4112C172.421 16.318 151.424 9.51196 129.815 8.71088C127.433 8.62259 125.5 6.69884 125.5 4.31547Z" fill=""/>
+    </svg>
+  </div>
+  <div class="preloader__circle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="52" viewBox="0 0 47 52" fill="none">
+      <path d="M0 13.8994L23.5 0V8.74085L0 21.6372V13.8994Z" fill=""/>
+      <path d="M47 13.9914L23.5 0V8.79874L47 21.7805V13.9914Z" fill=""/>
+      <path d="M46.2834 27.6557L26.0792 15.7625V24.5612L46.2834 35.8234V27.6557Z" fill=""/>
+      <path d="M0 27.6557L20.2043 15.7625V24.5612L0 35.8234V27.6557Z" fill=""/>
+      <path d="M9.88721 37.9724L20.3476 42.3566V51.4419L9.88721 45.4236V37.9724Z" fill=""/>
+      <path d="M9.88721 37.9724L20.3476 42.3566V51.4419L9.88721 45.4236V37.9724Z" fill=""/>
+      <path d="M13.1657 47.2306L12.968 23.7865L20.2392 23.4999L20.2392 51.3144L13.1657 47.2306Z" fill=""/>
+      <path d="M36.2834 38.4026L25.8231 42.7868V51.8721L36.2834 45.8538V38.4026Z" fill=""/>
+      <path d="M33.1363 47.4249L33.3343 23.9813L26.0631 23.6947L26.0628 51.5088L33.1363 47.4249Z" fill=""/>
+    </svg>
   </div>
 </div>
 
@@ -1555,6 +1606,51 @@
             <picture>
                 <img src="assets/img/calcbg.png" alt="bg">
             </picture>
+        </div>
+    </div>
+</div>
+
+<div class="modal modaltype">
+    <div class="modal__wrapper modaltype__wrapper"></div>
+    <div class="modal__content modaltype__content">
+        <div class="modal__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                <path d="M3.22729 41.7726C3.35789 41.9033 3.51298 42.007 3.6837 42.0778C3.85441 42.1486 4.03741 42.185 4.22221 42.185C4.40701 42.185 4.59 42.1486 4.76072 42.0778C4.93143 42.007 5.08653 41.9033 5.21713 41.7726L22.4999 24.4897L39.7898 41.7726C40.0537 42.0364 40.4115 42.1847 40.7847 42.1847C41.1579 42.1847 41.5158 42.0364 41.7796 41.7726C42.0435 41.5087 42.1917 41.1508 42.1917 40.7776C42.1917 40.4045 42.0435 40.0466 41.7796 39.7827L24.4898 22.4999L41.7726 5.21006C42.0365 4.94619 42.1847 4.58831 42.1847 4.21514C42.1847 3.84197 42.0365 3.48409 41.7726 3.22022C41.5087 2.95635 41.1508 2.80811 40.7777 2.80811C40.4045 2.80811 40.0466 2.95635 39.7828 3.22022L22.4999 20.5101L5.2101 3.22725C4.94108 2.99687 4.59504 2.87648 4.24112 2.89015C3.8872 2.90382 3.55147 3.05054 3.30103 3.30099C3.05058 3.55143 2.90386 3.88716 2.89019 4.24108C2.87652 4.595 2.99691 4.94104 3.22729 5.21006L20.5101 22.4999L3.22729 39.7897C2.96537 40.0532 2.81836 40.4096 2.81836 40.7812C2.81836 41.1527 2.96537 41.5091 3.22729 41.7726Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="modal__info">
+            <div class="modal__form" style="display: none;">
+                <div class="modal__title main-title">Введите свои данные и мы вам перезвоним</div>
+                <form action="">
+                    <input type="text" placeholder="Введите имя" class="modal__input">
+                    <input type="tel" placeholder="+7 707 770 77-77" class="modal__input">
+                    <div class="modal__select">
+                        <div class="modal__current">
+                            <b>Выберите услугу</b>
+                            <img src="assets/img/icons/down.svg" alt="down">
+                        </div>
+                        <div class="modal__others">
+                            <p>Поставщики</p>
+                            <p>Строители</p>
+                            <p>Дизайнеры</p>
+                            <p>Магазины</p>
+                        </div>
+                        <input  type="hidden">
+                    </div>
+                    <button type="submit" class="modal__btn white-btn">Отправить</button>
+                </form>
+            </div>
+            <div class="modal__wait modal--con1 " style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="251" height="252" viewBox="0 0 251 252" fill="none">
+                    <path d="M125.5 4.31547C125.5 1.9321 127.433 -0.0077793 129.815 0.0744687C153.125 0.879374 175.783 8.19319 195.224 21.2348C215.862 35.0799 231.948 54.7584 241.447 77.7819C250.946 100.805 253.431 126.14 248.589 150.581C243.746 175.023 231.793 197.474 214.242 215.096C196.69 232.717 174.328 244.717 149.984 249.579C125.639 254.441 100.405 251.945 77.4731 242.409C54.5409 232.872 34.9405 216.722 21.1504 196.002C8.15424 176.474 0.868721 153.713 0.0729956 130.298C-0.00763032 127.925 1.92444 126 4.29835 126C6.67226 126 8.5885 127.925 8.67505 130.297C9.46703 152.005 16.2468 173.098 28.2983 191.207C41.1438 210.508 59.4016 225.551 80.7629 234.435C102.124 243.318 125.63 245.643 148.307 241.114C170.984 236.585 191.814 225.407 208.163 208.993C224.512 192.578 235.646 171.665 240.157 148.898C244.668 126.13 242.353 102.531 233.505 81.0849C224.656 59.6385 209.673 41.3079 190.448 28.4112C172.421 16.318 151.424 9.51196 129.815 8.71088C127.433 8.62259 125.5 6.69884 125.5 4.31547Z" fill=""/>
+                </svg>
+                <b class="main-title">Подождите...</b>
+            </div>
+            <div class="modal__wait modal--con2" >
+                <img class="dark" src="assets/img/icons/done1.svg" alt="icon">
+                <img class="light" src="assets/img/icons/done2.svg" alt="icon">
+                <b class="main-title">Ваш запрос успешно отправлен!</b>
+            </div>
         </div>
     </div>
 </div>
