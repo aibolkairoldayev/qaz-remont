@@ -432,10 +432,6 @@ body {
   line-height: normal;
 }
 
-.body .header__right img {
-  display: none;
-}
-
 .body .header__btn {
   margin: 0 25px 0 35px;
 }

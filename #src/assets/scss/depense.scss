@@ -401,7 +401,7 @@
                 color: #fff;
             }
         }
-        &__form {
+        &__container {
             width: 43%;
             padding-top: 55px;
         }
@@ -447,6 +447,24 @@
             background: #FFF;
             padding: 24px 30px;
             margin: 0 20px;
+            &.show {
+                .tarif__less {
+                    display: flex;
+                }
+                .tarif__more {
+                    display: none;
+                }
+                .tarif__info {
+                    overflow: auto;
+                    max-height: unset;
+                    transition: .2s linear;
+                }
+                .tarif__btn {
+                    img {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
             .tarif__less {
                 display: none;
             }
@@ -481,6 +499,7 @@
             max-height: 410px;
             overflow: hidden;
             margin-bottom: 15px;
+            transition: .2s linear;
             &--item {
                 b {
                     color: #070707;
@@ -511,6 +530,7 @@
             width: 100%;
             background: #0B0B0B;
             align-items: center;
+            cursor: pointer;
             b {
                 display: flex;
                 
@@ -579,12 +599,28 @@
             padding: 28px 0;
             border-bottom: 1px solid #fff;
             align-items: center;
+            &.show {
+                .faq__ans {
+                    overflow-y: unset;
+                    max-height: 2000px;
+                    transition: .2s linear;
+                }
+                .faq__right {
+                    .plus {
+                        display: none;
+                    }
+                    .minus {
+                        display: block;
+                    }
+                }
+            }
             .minus {
                 display: none;
             }
         }
         &__right {
             width: 70px;
+            cursor: pointer;
         }
         &__left {
             width: calc(100% - 150px);
@@ -601,6 +637,9 @@
             font-style: normal;
             font-weight: 400;
             line-height: 150%; /* 30px */
+            max-height: 0;
+            overflow-y: hidden;
+            transition: .2s linear;
         }
     }
     .desc {
@@ -751,7 +790,7 @@
             width: 50%;
             margin-top: 100px;
         }
-        &__form {
+        &__container {
             width: 46%;
         }
         &__input {

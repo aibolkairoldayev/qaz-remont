@@ -39,8 +39,11 @@
                 <div class="header__top">
                     <b>Design/Construction</b>
                     <div class="header__right">
-                        <a href="tel:+77080016601" class="header__phone">+7 (708) 001-66-01</a>
-                        <img src="assets/img/icons/phone.svg" alt="phone">
+                        <div class="header__phone">
+                            <a href="tel:+77080016601" >+7 (708) 001-66-01</a>
+                            <img class="mobile" src="assets/img/icons/phone.svg" alt="phone">
+                        </div>
+                        
                         <button class="header__btn" onClick="openModal()">
                             <span>Заказать звонок</span>                            
                         </button>
@@ -801,12 +804,20 @@
                     </ol>
                 </div>
 
-                <div class="steps__form">
-                    <form action="">
-                        <input type="text" class="steps__input" placeholder="Введите имя">
-                        <input type="tel" class="steps__input" placeholder="+7 707 770 77-77">
-                        <div class="steps__btn white-btn">Заказать звонок</div>
-                    </form>
+                <div class="thanks-container steps__container">
+                    <div class="steps__form thanks-hidden">
+                        <form action="">
+                            <input type="text" class="steps__input" placeholder="Введите имя">
+                            <input type="tel" class="steps__input" placeholder="+7 707 770 77-77">
+                            <div class="steps__btn white-btn submit-btn">Заказать звонок</div>
+                        </form>
+                    </div>
+                    <div class="steps__thanks thankstype">
+                        <img src="assets/img/icons/done1.png" alt="icon">
+                        <b >
+                            Ваши данные успешно отправлены, ожидайте звонка
+                        </b>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1274,26 +1285,34 @@
                     Оставьте контактные данные и мы обязательно свяжемся с вами
                 </div>
 
-                <div class="ques__form">
-                    <form action="">
-                        <input class="ques__input" type="text" placeholder="Введите имя">
-                        <input class="ques__input" type="tel" placeholder="+7 707 770 77-77">
-                        <div class="ques__select main-select">
-                            <div class="ques__current main-current">
-                                <b>Выберите услугу</b>
-                                <img src="assets/img/icons/down.svg" alt="down">
+                <div class="thanks-container ques__container">
+                    <div class="ques__form thanks-hidden">
+                        <form action="">
+                            <input class="ques__input" type="text" placeholder="Введите имя">
+                            <input class="ques__input" type="tel" placeholder="+7 707 770 77-77">
+                            <div class="ques__select main-select">
+                                <div class="ques__current main-current">
+                                    <b>Выберите услугу</b>
+                                    <img src="assets/img/icons/down.svg" alt="down">
+                                </div>
+                                <div class="ques__others main-others">
+                                    <p>Дизайн интерьера</p>
+                                    <p>Ремонт под ключ</p>
+                                    <p>Строительство домов</p>
+                                    <p>Система вентиляции</p>
+                                    <p>Мебель под ключ</p>
+                                </div>
+                                <input  type="hidden" class="main-hidden">
                             </div>
-                            <div class="ques__others main-others">
-                                <p>Дизайн интерьера</p>
-                                <p>Ремонт под ключ</p>
-                                <p>Строительство домов</p>
-                                <p>Система вентиляции</p>
-                                <p>Мебель под ключ</p>
-                            </div>
-                            <input  type="hidden" class="main-hidden">
-                        </div>
-                        <button type="submit" class="ques__btn white-btn">Заказать звонок</button>
-                    </form>
+                            <div type="submit" class="ques__btn white-btn submit-btn">Заказать звонок</div>
+                        </form>
+                    </div>
+                    <div class="ques__thanks thankstype">
+                        <img src="assets/img/icons/done1.png" alt="icon">
+                        <b >
+                            Ваши данные успешно отправлены, ожидайте звонка
+                        </b>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1368,12 +1387,20 @@
                         Lörem ipsum levis dessocial fanar kropåskade hont. 
                     </div>
 
-                    <div class="footer__form">
-                        <form action="">
-                            <input type="text" class="footer__input" placeholder="Имя">
-                            <input type="tel" class="footer__input" placeholder="+7 707 777 77-77">
-                            <button type="submit" class="footer__btn white-btn">Отправить</button>
-                        </form>
+                    <div class="thanks-container">
+                        <div class="footer__form thanks-hidden">
+                            <form action="">
+                                <input type="text" class="footer__input" placeholder="Имя">
+                                <input type="tel" class="footer__input" placeholder="+7 707 777 77-77">
+                                <div type="submit" class="footer__btn white-btn submit-btn">Отправить</div>
+                            </form>
+                        </div>
+                        <div class="footer__thanks thankstype">
+                            <img src="assets/img/icons/done1.png" alt="icon">
+                            <b >
+                                Ваши данные успешно отправлены, ожидайте звонка
+                            </b>
+                        </div>
                     </div>
 
                     <div class="footer__policy--text">

@@ -317,6 +317,10 @@
   color: var(--color-1, #2B2A28);
 }
 
+.body.white .footer__thanks {
+  background-color: #2b2a28;
+}
+
 .body.white .socials.dark {
   display: none;
 }
@@ -944,7 +948,7 @@
   color: #fff;
 }
 
-.body .steps__form {
+.body .steps__container {
   width: 43%;
   padding-top: 55px;
 }
@@ -1028,6 +1032,30 @@
   margin: 0 20px;
 }
 
+.body .tarif__item.show .tarif__less {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .tarif__item.show .tarif__more {
+  display: none;
+}
+
+.body .tarif__item.show .tarif__info {
+  overflow: auto;
+  max-height: unset;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.body .tarif__item.show .tarif__btn img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .body .tarif__item .tarif__less {
   display: none;
 }
@@ -1068,6 +1096,9 @@
   max-height: 410px;
   overflow: hidden;
   margin-bottom: 15px;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .body .tarif__info--item b {
@@ -1106,6 +1137,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .body .tarif__btn b {
@@ -1197,12 +1229,29 @@
           align-items: center;
 }
 
+.body .faq__item.show .faq__ans {
+  overflow-y: unset;
+  max-height: 2000px;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.body .faq__item.show .faq__right .plus {
+  display: none;
+}
+
+.body .faq__item.show .faq__right .minus {
+  display: block;
+}
+
 .body .faq__item .minus {
   display: none;
 }
 
 .body .faq__right {
   width: 70px;
+  cursor: pointer;
 }
 
 .body .faq__left {
@@ -1223,6 +1272,11 @@
   font-weight: 400;
   line-height: 150%;
   /* 30px */
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .body .desc {
@@ -1419,7 +1473,7 @@
   margin-top: 100px;
 }
 
-.body .ques__form {
+.body .ques__container {
   width: 46%;
 }
 

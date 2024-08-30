@@ -39,8 +39,11 @@
                 <div class="header__top">
                     <b>Design/Construction</b>
                     <div class="header__right">
-                        <a href="tel:+77080016601" class="header__phone">+7 (708) 001-66-01</a>
-                        <img src="assets/img/icons/phone.svg" alt="phone">
+                        <div class="header__phone">
+                            <a href="tel:+77080016601" >+7 (708) 001-66-01</a>
+                            <img class="mobile" src="assets/img/icons/phone.svg" alt="phone">
+                        </div>
+                        
                         <button class="header__btn" onClick="openModal()">
                             <span>Заказать звонок</span>                            
                         </button>
@@ -213,12 +216,20 @@
                         Lörem ipsum levis dessocial fanar kropåskade hont. 
                     </div>
 
-                    <div class="footer__form">
-                        <form action="">
-                            <input type="text" class="footer__input" placeholder="Имя">
-                            <input type="tel" class="footer__input" placeholder="+7 707 777 77-77">
-                            <button type="submit" class="footer__btn white-btn">Отправить</button>
-                        </form>
+                    <div class="thanks-container">
+                        <div class="footer__form thanks-hidden">
+                            <form action="">
+                                <input type="text" class="footer__input" placeholder="Имя">
+                                <input type="tel" class="footer__input" placeholder="+7 707 777 77-77">
+                                <div type="submit" class="footer__btn white-btn submit-btn">Отправить</div>
+                            </form>
+                        </div>
+                        <div class="footer__thanks thankstype">
+                            <img src="assets/img/icons/done1.png" alt="icon">
+                            <b >
+                                Ваши данные успешно отправлены, ожидайте звонка
+                            </b>
+                        </div>
                     </div>
 
                     <div class="footer__policy--text">

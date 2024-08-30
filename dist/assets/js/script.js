@@ -151,3 +151,27 @@ $(document).ready(function() {
         $('.projects__content--item').eq(index).addClass('active');
     });
 });
+
+//tarif block item show more in service page
+$(document).ready(function() {
+    if($('.tarif__items').length){
+        for (let i = 0; i < $('.tarif__item').length; i++) {
+            $('.tarif__item').eq(i).children('.tarif__btn').click(()=> {
+                $('.tarif__item').eq(i).toggleClass('show')
+            })
+            
+        }
+    }
+})
+
+//questions accordion block show in service page
+$(document).ready(function() {
+    if($('.faq__items').length){
+        for (let i = 0; i < $('.faq__item').length; i++) {
+            $('.faq__item').eq(i).children('.faq__right').click(()=> {
+                $('.faq__item').eq(i).toggleClass('show')
+            })
+            
+        }
+    }
+})
