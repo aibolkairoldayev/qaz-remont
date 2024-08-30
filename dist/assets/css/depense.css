@@ -1697,10 +1697,19 @@
   margin-top: 50px;
 }
 
+.body .modal {
+  display: none;
+}
+
+.body .modal.show {
+  display: block;
+}
+
 .body .modal__content {
   width: 700px;
   left: calc(50% - 350px);
   padding: 60px 0;
+  min-height: 400px;
 }
 
 .body .modal__close {
@@ -1808,10 +1817,9 @@
   padding: 10px 20px;
 }
 
-.body .modal__current img {
-  width: 36px;
-  height: 14px;
-  margin-top: 3px;
+.body .modal__current svg path {
+  fill: #fff;
+  margin-top: 7px;
 }
 
 .body .modal__current b {
@@ -1900,6 +1908,41 @@
 
 .body .modal__form {
   padding: 0 80px;
+}
+
+.body .thankstype {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+  max-width: 550px;
+  display: none;
+}
+
+.body .thankstype img {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.body .thankstype b {
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .body.white .projects__nav--item {
@@ -2087,4 +2130,17 @@
 
 .body.white .modal__select b {
   color: #2B2A28;
+}
+
+.body.white .modal__current svg path {
+  fill: #0D0D0D;
+}
+
+.body.white .modal__btn {
+  background: #0D0D0D;
+  color: #fff;
+}
+
+.body.white .modal__others {
+  border: 1px #000 solid;
 }

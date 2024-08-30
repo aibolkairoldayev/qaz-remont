@@ -71,7 +71,6 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
     z-index: 600;
     background: var(--color-1, #2B2A28);
     display: flex;
-    display: none;
     align-items: center;
     justify-content: center;
     transition: .4s ease-out;
@@ -125,6 +124,7 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     &:hover {
       background: #FFF8E8;
     }
@@ -138,6 +138,31 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
       backdrop-filter: blur(5px);
     }
   }
+  .main {
+    &-select {
+      cursor: pointer;
+      .main-others {
+        display: none;
+      }
+      &.show {
+        .main-others {
+          display: block;
+        }
+        .main-current {
+          img {
+            transform: rotate(180deg);
+            transition: .3s linear;
+          }
+        }
+      }
+    }
+    &-current {
+      img {
+        transition: .3s linear;
+      }
+    }
+    
+    }
   &.white {
     background-color: #fff;
     .dark {

@@ -43,12 +43,12 @@
                 font-weight: 600;
                 line-height: normal;
             }
-        }
-        &__btn {
-            margin: 0 25px 0 35px;
             img {
                 display: none;
             }
+        }
+        &__btn {
+            margin: 0 25px 0 35px;           
             span {
                 border-radius: 20px;
                 background: var(--color-3, #FFF);
@@ -70,6 +70,7 @@
         &__mode {
             position: relative;
             cursor: pointer;
+            min-width: 40px;
             p {
                 color: #FFF;
                 font-size: 14px;

@@ -20,7 +20,7 @@
                             <li>Кайдзен система</li>
                         </ul>
                         <div class="banner2__btns">
-                            <button class="banner2__calc">Рассчитать ваш проект</button>
+                            <button class="banner2__calc" onClick="openCalc()">Рассчитать ваш проект</button>
                             <button class="banner2__video">
                                 <img src="assets/img/icons/video.svg" alt="video">
                             </button>
@@ -334,7 +334,7 @@
                     </div>
                 </div>
 
-                <div class="projects__content--item">
+                <div class="projects__content--item active">
                     <div class="projects__item">
                         <div class="projects__item--slider">
                             <div class="projects__big">
@@ -1168,19 +1168,19 @@
                     <form action="">
                         <input class="ques__input" type="text" placeholder="Введите имя">
                         <input class="ques__input" type="tel" placeholder="+7 707 770 77-77">
-                        <div class="ques__select">
-                            <div class="ques__current">
+                        <div class="ques__select main-select">
+                            <div class="ques__current main-current">
                                 <b>Выберите услугу</b>
                                 <img src="assets/img/icons/down.svg" alt="down">
                             </div>
-                            <div class="ques__others">
+                            <div class="ques__others main-others">
                                 <p>Дизайн интерьера</p>
                                 <p>Ремонт под ключ</p>
                                 <p>Строительство домов</p>
                                 <p>Система вентиляции</p>
                                 <p>Мебель под ключ</p>
                             </div>
-                            <input  type="hidden">
+                            <input  type="hidden" class="main-hidden">
                         </div>
                         <button type="submit" class="ques__btn white-btn">Заказать звонок</button>
                     </form>

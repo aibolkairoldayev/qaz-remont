@@ -562,6 +562,8 @@
   font-weight: 400;
   line-height: normal;
   margin: 20px 0;
+  height: 120px;
+  overflow-y: hidden;
 }
 
 .body .news__item a {

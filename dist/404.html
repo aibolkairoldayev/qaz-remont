@@ -31,8 +31,8 @@
     <div class="container">
         <div class="header__content">
             <a htef="/" class="header__logo">
-                <img class="dark" src="assets/img/icons/logoh.svg" alt="logo">
-                <img class="light" src="assets/img/icons/logo2.svg" alt="logo">
+                <img class="dark turnsun" src="assets/img/icons/logoh.svg" alt="logo">
+                <img class="light turnmoon" src="assets/img/icons/logo2.svg" alt="logo">
             </a>
 
             <div class="header__info">
@@ -40,14 +40,14 @@
                     <b>Design/Construction</b>
                     <div class="header__right">
                         <a href="tel:+77080016601" class="header__phone">+7 (708) 001-66-01</a>
-                        <button class="header__btn">
-                            <span>Заказать звонок</span>
-                            <img src="assets/img/icons/phone.svg" alt="phone">
+                        <img src="assets/img/icons/phone.svg" alt="phone">
+                        <button class="header__btn" onClick="openModal()">
+                            <span>Заказать звонок</span>                            
                         </button>
                         <div class="header__mode desktop">
-                            <img class="dark" src="assets/img/icons/sun.svg" alt="sun">
+                            <img class="dark turnsun" src="assets/img/icons/sun.svg" alt="sun">
                             <p class="dark">Включить светлое оформление</p>
-                            <img class="light" src="assets/img/icons/moon.svg" alt="moon">
+                            <img class="light turnmoon" src="assets/img/icons/moon.svg" alt="moon">
                             <p class="light">Включить темное оформление</p>
                         </div>
                         <div class="header__date">
@@ -423,31 +423,33 @@
 <div class="modal modaltype">
     <div class="modal__wrapper modaltype__wrapper"></div>
     <div class="modal__content modaltype__content">
-        <div class="modal__close">
+        <div class="modal__close" onClick="closeModal()">
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
                 <path d="M3.22729 41.7726C3.35789 41.9033 3.51298 42.007 3.6837 42.0778C3.85441 42.1486 4.03741 42.185 4.22221 42.185C4.40701 42.185 4.59 42.1486 4.76072 42.0778C4.93143 42.007 5.08653 41.9033 5.21713 41.7726L22.4999 24.4897L39.7898 41.7726C40.0537 42.0364 40.4115 42.1847 40.7847 42.1847C41.1579 42.1847 41.5158 42.0364 41.7796 41.7726C42.0435 41.5087 42.1917 41.1508 42.1917 40.7776C42.1917 40.4045 42.0435 40.0466 41.7796 39.7827L24.4898 22.4999L41.7726 5.21006C42.0365 4.94619 42.1847 4.58831 42.1847 4.21514C42.1847 3.84197 42.0365 3.48409 41.7726 3.22022C41.5087 2.95635 41.1508 2.80811 40.7777 2.80811C40.4045 2.80811 40.0466 2.95635 39.7828 3.22022L22.4999 20.5101L5.2101 3.22725C4.94108 2.99687 4.59504 2.87648 4.24112 2.89015C3.8872 2.90382 3.55147 3.05054 3.30103 3.30099C3.05058 3.55143 2.90386 3.88716 2.89019 4.24108C2.87652 4.595 2.99691 4.94104 3.22729 5.21006L20.5101 22.4999L3.22729 39.7897C2.96537 40.0532 2.81836 40.4096 2.81836 40.7812C2.81836 41.1527 2.96537 41.5091 3.22729 41.7726Z" fill="white"/>
             </svg>
         </div>
         <div class="modal__info">
-            <div class="modal__form" style="display: none;">
+            <div class="modal__form">
                 <div class="modal__title main-title">Введите свои данные и мы вам перезвоним</div>
                 <form action="">
                     <input type="text" placeholder="Введите имя" class="modal__input">
                     <input type="tel" placeholder="+7 707 770 77-77" class="modal__input">
-                    <div class="modal__select">
-                        <div class="modal__current">
+                    <div class="modal__select main-select">
+                        <div class="modal__current main-current">
                             <b>Выберите услугу</b>
-                            <img src="assets/img/icons/down.svg" alt="down">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none">
+                                <path d="M9 9.21424C8.89344 9.21549 8.78779 9.19517 8.68983 9.15457C8.59188 9.11398 8.5038 9.05401 8.43125 8.97852L1.11875 1.90709C0.79375 1.59281 0.79375 1.10566 1.11875 0.791378C1.44375 0.477093 1.9475 0.477093 2.2725 0.791378L9.01625 7.31281L15.7437 0.807093C16.0687 0.492807 16.5725 0.492807 16.8975 0.807093C17.2225 1.12138 17.2225 1.60852 16.8975 1.92281L9.585 8.99424C9.4225 9.15138 9.21125 9.22995 9.01625 9.22995L9 9.21424Z" fill=""/>
+                            </svg>
                         </div>
-                        <div class="modal__others">
+                        <div class="modal__others main-others">
                             <p>Поставщики</p>
                             <p>Строители</p>
                             <p>Дизайнеры</p>
                             <p>Магазины</p>
                         </div>
-                        <input  type="hidden">
+                        <input  type="hidden" class="main-hidden">
                     </div>
-                    <button type="submit" class="modal__btn white-btn">Отправить</button>
+                    <div type="submit" class="modal__btn white-btn" onCLick="openThanks()">Отправить</div>
                 </form>
             </div>
             <div class="modal__wait modal--con1 " style="display: none;">
@@ -456,9 +458,9 @@
                 </svg>
                 <b class="main-title">Подождите...</b>
             </div>
-            <div class="modal__wait modal--con2" >
-                <img class="dark" src="assets/img/icons/done1.svg" alt="icon">
-                <img class="light" src="assets/img/icons/done2.svg" alt="icon">
+            <div class="modal__wait modal--con2" style="display: none;">
+                <img class="dark" src="assets/img/icons/done1.png" alt="icon">
+                <img class="light" src="assets/img/icons/done2.png" alt="icon">
                 <b class="main-title">Ваш запрос успешно отправлен!</b>
             </div>
         </div>

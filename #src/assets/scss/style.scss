@@ -127,8 +127,12 @@
 }
 
 .body {
+    background-color: #2B2A28;
     .calc {
         display: none;
+        &.show {
+            display: block;
+        }
         &__content {
             top: 0;
             max-width: 1316px;

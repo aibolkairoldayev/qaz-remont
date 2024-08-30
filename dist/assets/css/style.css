@@ -175,7 +175,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -254,6 +253,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .body .white-btn:hover {
@@ -268,6 +268,33 @@ body {
   background: var(--color-1, #2B2A28);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+}
+
+.body .main-select {
+  cursor: pointer;
+}
+
+.body .main-select .main-others {
+  display: none;
+}
+
+.body .main-select.show .main-others {
+  display: block;
+}
+
+.body .main-select.show .main-current img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.body .main-current img {
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .body.white {
@@ -405,12 +432,12 @@ body {
   line-height: normal;
 }
 
-.body .header__btn {
-  margin: 0 25px 0 35px;
+.body .header__right img {
+  display: none;
 }
 
-.body .header__btn img {
-  display: none;
+.body .header__btn {
+  margin: 0 25px 0 35px;
 }
 
 .body .header__btn span {
@@ -436,6 +463,7 @@ body {
 .body .header__mode {
   position: relative;
   cursor: pointer;
+  min-width: 40px;
 }
 
 .body .header__mode p {
@@ -680,8 +708,16 @@ body {
   display: none;
 }
 
+.body {
+  background-color: #2B2A28;
+}
+
 .body .calc {
   display: none;
+}
+
+.body .calc.show {
+  display: block;
 }
 
 .body .calc__content {
