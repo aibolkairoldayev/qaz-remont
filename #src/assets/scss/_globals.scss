@@ -19,11 +19,11 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
   }
 
   @media (max-width: 992px) {
-    max-width: 780px;
+    max-width: 750px;
   }
 
   @media (max-width: 768px) {
-    max-width: 560;
+    max-width: 560px;
   }
 
   @media (max-width: 576px) {
@@ -34,6 +34,12 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
 
 .main {
   padding-top: 125px;
+  @media (max-width: 992px) {
+    padding-top: 80px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 40px;
+  }
 }
 
 .modaltype {
@@ -117,6 +123,18 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    @media(max-width: 992px) {
+      font-size: 32px;
+    }
+    @media(max-width: 768px) {
+      font-size: 28px;
+    }
+    @media(max-width: 576px) {
+      font-size: 24px;
+    }
+    @media(max-width: 480px) {
+      font-size: 21px;
+    }
   }
   .white-btn {
     border-radius: 20px;
@@ -204,7 +222,19 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
       }
     }
   }
+}
+.mobile {
+  display: none;
+}
 
+@media(max-width: 992px) {
+  .desktop {
+    display: none;
+  }
+
+.mobile {
+  display: block;
+}
 }
 
 @keyframes spin {

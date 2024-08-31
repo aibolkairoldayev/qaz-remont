@@ -2,8 +2,8 @@
     <div class="container">
         <div class="header__content">
             <a htef="/" class="header__logo">
-                <img class="dark turnsun" src="assets/img/icons/logoh.svg" alt="logo">
-                <img class="light turnmoon" src="assets/img/icons/logo2.svg" alt="logo">
+                <img class="dark" src="assets/img/icons/logoh.svg" alt="logo">
+                <img class="light" src="assets/img/icons/logo2.svg" alt="logo">
             </a>
 
             <div class="header__info">
@@ -11,11 +11,11 @@
                     <b>Design/Construction</b>
                     <div class="header__right">
                         <div class="header__phone">
-                            <a href="tel:+77080016601" >+7 (708) 001-66-01</a>
+                            <a class="desktop" href="tel:+77080016601" >+7 (708) 001-66-01</a>
                             <img class="mobile" src="assets/img/icons/phone.svg" alt="phone">
                         </div>
                         
-                        <button class="header__btn" onClick="openModal()">
+                        <button class="header__btn desktop" onClick="openModal()">
                             <span>Заказать звонок</span>                            
                         </button>
                         <div class="header__mode desktop">
@@ -24,14 +24,19 @@
                             <img class="light turnmoon" src="assets/img/icons/moon.svg" alt="moon">
                             <p class="light">Включить темное оформление</p>
                         </div>
-                        <div class="header__date">
+                        <div class="header__date desktop">
                             <p>ПН-СБ</p>
                             <p>9:00-21:00</p>
+                        </div>
+                        <div class="header__burger mobile" onClick="toggleBurger()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
 
-                <div class="header__bot">
+                <div class="header__bot desktop">
                     <ul class="header__menu">
                         <li><a href="">Дизайн интерьера</a></li>
                         <li><a href="">Ремонт под ключ</a></li>
@@ -75,10 +80,10 @@
     
         <div class="burger__btn white-btn">Заказать звонок</div>
         <div class="header__mode mobile">
-            <img class="dark" src="assets/img/icons/sun.svg" alt="sun">
-            <p class="dark colortext">Включить светлое оформление</p>
-            <img class="light" src="assets/img/icons/moon.svg" alt="moon">
-            <p class="light colortext">Включить темное оформление</p>
+            <img class="dark turnsun" src="assets/img/icons/sun.svg" alt="sun">
+            <p class="dark colortext turnsun">Включить светлое оформление</p>
+            <img class="light turnmoon" src="assets/img/icons/moon.svg" alt="moon">
+            <p class="light colortext turnmoon">Включить темное оформление</p>
         </div>
     </div>
 </div>

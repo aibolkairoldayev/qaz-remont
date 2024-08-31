@@ -47,10 +47,11 @@ if ($('.modal').length) {
         $('.modal').removeClass('show');
         $('body').css('overflow', 'unset'); 
     }   
+    $('.modal__wrapper').click(()=> {
+        closeModal()
+    })
 }
-$('.modal__wrapper').click(()=> {
-    closeModal()
-})
+
 
 // custom select function in forms
 $(document).ready(function() {
@@ -175,3 +176,67 @@ $(document).ready(function() {
         }
     }
 })
+
+//video frame open/close
+if($('.video').length) {
+    function openVideo() {
+        $('.video').addClass('show');
+        $('body').css('overflow', 'hidden'); 
+    }  
+    function closeVideo() {
+        $('.video').removeClass('show');
+        $('body').css('overflow', 'unset'); 
+    }   
+    $('.video__wrapper').click(()=> {
+        closeVideo()
+    })
+}
+
+//calculator modal content change function
+$(document).ready(function() {
+    const $rowItems = $(".calc__row--item");
+    const $chooseItems = $(".calc__choose--item");
+    const $btnBack = $(".calc__back");
+    const $btnForw = $(".calc__forw");
+    const $btnPrice = $(".calc__price");
+
+    let currentIndex = 0;
+
+    function updateSteps() {
+        // Обновляем активный элемент в верхней и нижней группах
+        $rowItems.removeClass("active").eq(currentIndex).addClass("active");
+        $chooseItems.removeClass("active").eq(currentIndex).addClass("active");
+
+        // Показываем или скрываем кнопки "Назад", "Далее" и "Узнать стоимость"
+        $btnBack.toggleClass("show", currentIndex > 0);
+        $btnForw.toggleClass("show", currentIndex < $rowItems.length - 1);
+        $btnPrice.toggleClass("show", currentIndex === $rowItems.length - 1);
+    }
+
+    $btnForw.on("click", function() {
+        if (currentIndex < $rowItems.length - 1) {
+            currentIndex++;
+            updateSteps();
+        }
+    });
+
+    $btnBack.on("click", function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSteps();
+        }
+    });
+
+    updateSteps(); // Инициализация при загрузке страницы
+});
+
+//burger open/close
+if($('.burger').length) {
+    function toggleBurger() {
+        $('.burger').toggleClass('open');   
+    }  
+
+    $('.burger__wrapper').click(()=> {
+        toggleBurger()
+    })
+}

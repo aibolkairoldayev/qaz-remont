@@ -294,6 +294,10 @@
             height: 50px;
             display: none;
             width: fit-content;
+            cursor: pointer;
+            &:hover {
+                background-color: #FFF8E8;
+            }
             &.show {
                 display: flex;
             }

@@ -30,8 +30,8 @@
     <div class="container">
         <div class="header__content">
             <a htef="/" class="header__logo">
-                <img class="dark turnsun" src="assets/img/icons/logoh.svg" alt="logo">
-                <img class="light turnmoon" src="assets/img/icons/logo2.svg" alt="logo">
+                <img class="dark" src="assets/img/icons/logoh.svg" alt="logo">
+                <img class="light" src="assets/img/icons/logo2.svg" alt="logo">
             </a>
 
             <div class="header__info">
@@ -39,11 +39,11 @@
                     <b>Design/Construction</b>
                     <div class="header__right">
                         <div class="header__phone">
-                            <a href="tel:+77080016601" >+7 (708) 001-66-01</a>
+                            <a class="desktop" href="tel:+77080016601" >+7 (708) 001-66-01</a>
                             <img class="mobile" src="assets/img/icons/phone.svg" alt="phone">
                         </div>
                         
-                        <button class="header__btn" onClick="openModal()">
+                        <button class="header__btn desktop" onClick="openModal()">
                             <span>Заказать звонок</span>                            
                         </button>
                         <div class="header__mode desktop">
@@ -52,14 +52,19 @@
                             <img class="light turnmoon" src="assets/img/icons/moon.svg" alt="moon">
                             <p class="light">Включить темное оформление</p>
                         </div>
-                        <div class="header__date">
+                        <div class="header__date desktop">
                             <p>ПН-СБ</p>
                             <p>9:00-21:00</p>
+                        </div>
+                        <div class="header__burger mobile" onClick="toggleBurger()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
 
-                <div class="header__bot">
+                <div class="header__bot desktop">
                     <ul class="header__menu">
                         <li><a href="">Дизайн интерьера</a></li>
                         <li><a href="">Ремонт под ключ</a></li>
@@ -103,10 +108,10 @@
     
         <div class="burger__btn white-btn">Заказать звонок</div>
         <div class="header__mode mobile">
-            <img class="dark" src="assets/img/icons/sun.svg" alt="sun">
-            <p class="dark colortext">Включить светлое оформление</p>
-            <img class="light" src="assets/img/icons/moon.svg" alt="moon">
-            <p class="light colortext">Включить темное оформление</p>
+            <img class="dark turnsun" src="assets/img/icons/sun.svg" alt="sun">
+            <p class="dark colortext turnsun">Включить светлое оформление</p>
+            <img class="light turnmoon" src="assets/img/icons/moon.svg" alt="moon">
+            <p class="light colortext turnmoon">Включить темное оформление</p>
         </div>
     </div>
 </div>
@@ -517,7 +522,7 @@
                                 </div>
                                 <input  type="hidden" class="main-hidden">
                             </div>
-                            <div class="comeus__btn white-btn submit-btn" type="submit">Заказать звонок</div>
+                            <div class="comeus__btn white-btn submit-btn appl__btn" type="submit">Заказать звонок</div>
                         </form>
                     </div>
     
@@ -617,7 +622,7 @@
 
         </div>
     </div>
-</footer>
+</footer> 
 
 <div class="preloader">
   <div class="preloader__spin">
@@ -646,8 +651,8 @@
         <div class="calc__steps">
             <div class="calc__title main-title">Чтобы рассчитать стоимость Вашего проекта, ответьте на пару вопросов</div>
             <div class="calc__row">
-                <div class="calc__row--item">Шаг 1</div>
-                <div class="calc__row--item active">Шаг 2</div>
+                <div class="calc__row--item active">Шаг 1</div>
+                <div class="calc__row--item">Шаг 2</div>
                 <div class="calc__row--item">Шаг 3</div>
                 <div class="calc__row--item">Шаг 4</div>
                 <div class="calc__row--item">Шаг 5</div>
@@ -877,6 +882,18 @@
                 <b class="main-title">Ваш запрос успешно отправлен!</b>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="video modaltype">
+    <div class="video__wrapper modaltype__wrapper"></div>
+    <div class="video__content modaltype__content">
+        <div class="video__close" onClick="closeVideo()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 45 45" fill="none">
+                <path d="M3.22735 41.7727C3.35795 41.9034 3.51304 42.0072 3.68376 42.0779C3.85448 42.1487 4.03747 42.1851 4.22227 42.1851C4.40707 42.1851 4.59006 42.1487 4.76078 42.0779C4.9315 42.0072 5.08659 41.9034 5.21719 41.7727L22.5 24.4899L39.7898 41.7727C40.0537 42.0365 40.4116 42.1848 40.7848 42.1848C41.1579 42.1848 41.5158 42.0365 41.7797 41.7727C42.0436 41.5088 42.1918 41.1509 42.1918 40.7778C42.1918 40.4046 42.0436 40.0467 41.7797 39.7828L24.4898 22.5L41.7727 5.21018C42.0365 4.94631 42.1848 4.58843 42.1848 4.21526C42.1848 3.84209 42.0365 3.48421 41.7727 3.22034C41.5088 2.95647 41.1509 2.80823 40.7777 2.80823C40.4046 2.80823 40.0467 2.95647 39.7828 3.22034L22.5 20.5102L5.21016 3.22737C4.94114 2.99699 4.5951 2.8766 4.24118 2.89027C3.88726 2.90395 3.55153 3.05066 3.30109 3.30111C3.05064 3.55155 2.90392 3.88728 2.89025 4.2412C2.87658 4.59512 2.99697 4.94116 3.22735 5.21018L20.5102 22.5L3.22735 39.7899C2.96543 40.0533 2.81842 40.4098 2.81842 40.7813C2.81842 41.1528 2.96543 41.5092 3.22735 41.7727Z" fill=""/>
+            </svg>
+        </div>
+        <iframe  src="https://www.youtube.com/embed/U2BWHb9DNm4?si=VoZMUpNtsgvLpqfn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </div>
 <script src="./assets/js/jquery-3.2.1.min.js" defer></script>
