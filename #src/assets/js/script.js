@@ -240,3 +240,22 @@ if($('.burger').length) {
         toggleBurger()
     })
 }
+
+// width for projects slider idem in mobile in service page
+$(document).ready(function() {
+    function adjustItemWidth() {
+        if ($(window).width() < 576) {
+            $('.projects__item').css('width', ($(window).width() - 30) + 'px');
+        } else {
+            $('.projects__item').css('width', ''); // Сбрасываем ширину, если экран больше 576 пикселей
+        }
+    }
+
+    // Вызываем функцию при загрузке страницы
+    adjustItemWidth();
+
+    // Вызываем функцию при изменении размера окна
+    $(window).resize(function() {
+        adjustItemWidth();
+    });
+});

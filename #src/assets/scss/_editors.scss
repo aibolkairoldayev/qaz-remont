@@ -8,6 +8,9 @@
       line-height: normal;
       font-feature-settings: 'tnum' on, 'lnum' on;
       color: #fff;
+      @media(max-width: 576px) {
+        font-size: 15px;
+      }
       p, span {
         font-size: 20px;
         font-style: normal;
@@ -16,6 +19,9 @@
         font-feature-settings: 'tnum' on, 'lnum' on;
         color: #fff;
         margin-bottom: 10px;
+        @media(max-width: 576px) {
+          font-size: 15px;
+        }
       }
     }
     p, span {
@@ -27,6 +33,9 @@
       font-feature-settings: 'tnum' on, 'lnum' on;
       color: #fff;
       margin-bottom: 10px;
+      @media(max-width: 576px) {
+        font-size: 15px;
+      }
       b, strong {
         font-weight: 600;
       }
@@ -42,6 +51,9 @@
         color: #fff;
         list-style: decimal;
         list-style-position: inside;
+        @media(max-width: 576px) {
+          font-size: 15px;
+        }
       }
     }
     ul {
@@ -55,6 +67,9 @@
         color: #fff;
         list-style: disc;
         list-style-position: inside;
+        @media(max-width: 576px) {
+          font-size: 15px;
+        }
       }
     }
   }
