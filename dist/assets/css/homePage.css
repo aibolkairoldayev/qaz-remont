@@ -79,36 +79,58 @@
   grid-row-gap: 34px;
 }
 
-.body .services__item {
-  position: relative;
-}
-
-.body .services__item b {
+.body .services__text {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: block;
   border-radius: 20px;
   opacity: 0.7;
   background: var(--color-1, #2B2A28);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   color: var(--color-3, #FFF);
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  height: 50px;
+  min-height: 50px;
   width: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 10px 15px;
+}
+
+.body .services__item {
+  position: relative;
+}
+
+.body .services__item:hover img {
+  opacity: 0.6;
+}
+
+.body .services__item:hover p {
+  height: 60px;
+}
+
+.body .services__item b {
+  display: block;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.body .services__item p {
+  height: 0;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  overflow-y: hidden;
 }
 
 .body .services__item picture {
@@ -196,7 +218,7 @@
 }
 
 .body .about__text {
-  color: var(--color-3, #FFF);
+  color: #999;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -228,7 +250,7 @@
 }
 
 .body .about__item b {
-  color: #FFF;
+  color: var(--Orange, #F8B540);
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -237,7 +259,7 @@
 
 .body .about__item span {
   display: block;
-  color: var(--color-3, #FFF);
+  color: #999;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -247,7 +269,7 @@
 }
 
 .body .about__subtext {
-  color: var(--color-3, #FFF);
+  color: #999;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -348,11 +370,13 @@
 }
 
 .body .insta__info span {
-  color: var(--color-2, #FFF);
-  font-size: 20px;
+  color: var(--color-4, #6B6B6A);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: block;
+  margin-top: 10px;
 }
 
 .body .insta__info span:hover {
@@ -387,6 +411,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px;
 }
 
 .body .comeus__info {
@@ -408,7 +433,7 @@
 }
 
 .body .comeus__form input::-webkit-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -416,7 +441,7 @@
 }
 
 .body .comeus__form input::-moz-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -424,7 +449,7 @@
 }
 
 .body .comeus__form input:-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -432,7 +457,7 @@
 }
 
 .body .comeus__form input::-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -440,7 +465,7 @@
 }
 
 .body .comeus__form input::placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -451,10 +476,8 @@
   height: 70px;
   width: 100%;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  color: var(--color-2, #FFF);
+  background: #fff;
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -489,6 +512,12 @@
   margin-top: 3px;
 }
 
+.body .comeus__current b {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+}
+
 .body .comeus__others {
   position: absolute;
   width: 100%;
@@ -518,14 +547,14 @@
 }
 
 .body .comeus__btn {
-  width: 325px;
+  width: 100%;
   height: 76px;
-  color: var(--color-1, #2B2A28);
+  background: var(--Orange, #F8B540);
   text-align: center;
   font-family: "Rubik", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -551,8 +580,8 @@
 }
 
 .body .news__item span {
-  color: var(--color-2, #FFF);
-  font-size: 20px;
+  color: #999;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -569,19 +598,19 @@
 }
 
 .body .news__item p {
-  color: #FFF;
-  font-size: 20px;
+  color: #999;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin: 20px 0;
-  height: 120px;
+  height: 80px;
   overflow-y: hidden;
 }
 
 .body .news__item a {
-  color: var(--color-2, #FFF);
-  font-size: 20px;
+  color: var(--Orange, #F8B540);
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -593,21 +622,6 @@
           align-items: center;
 }
 
-.body .news__item a:hover {
-  color: #FDDB92;
-}
-
-.body .news__item a:hover svg {
-  margin-left: 10px;
-  -webkit-transition: 0.1s linear;
-  -o-transition: 0.1s linear;
-  transition: 0.1s linear;
-}
-
-.body .news__item a:hover svg path {
-  stroke: #FDDB92;
-}
-
 .body .news__item a svg {
   margin-left: 7px;
   margin-top: 6px;
@@ -617,7 +631,7 @@
 }
 
 .body .news__item a svg path {
-  stroke: #fff;
+  stroke: #F8B540;
 }
 
 .body .news__items {
@@ -695,7 +709,7 @@
 .body .contacts__info {
   border-radius: 20px;
   border: 2px solid var(--color-2, #FFF);
-  padding: 30px 0 40px;
+  padding: 60px 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,7 +902,7 @@
 }
 
 .body.white .about__text {
-  color: var(--color-9, #0D0D0D);
+  color: #444;
 }
 
 .body.white .about__content p {
@@ -896,22 +910,18 @@
 }
 
 .body.white .about__item b {
-  color: var(--color-9, #0D0D0D);
+  color: var(--Orange, #f8b540);
 }
 
 .body.white .about__item span {
-  color: var(--color-9, #0D0D0D);
+  color: #444;
 }
 
 .body.white .about__subtext {
-  color: var(--color-9, #0D0D0D);
+  color: #444;
 }
 
 .body.white .insta__info p {
-  color: var(--color-9, #0D0D0D);
-}
-
-.body.white .insta__info span {
   color: var(--color-9, #0D0D0D);
 }
 
@@ -924,7 +934,7 @@
 }
 
 .body.white .news__item span {
-  color: var(--color-9, #0D0D0D);
+  color: #444;
 }
 
 .body.white .news__item b {
@@ -932,7 +942,7 @@
 }
 
 .body.white .news__item p {
-  color: var(--color-9, #0D0D0D);
+  color: #444;
 }
 
 .body.white .news__item a {
@@ -1270,6 +1280,10 @@
   }
 
   .body .insta__img img {
+    border-radius: 10px;
+  }
+
+  .body .comeus__bg img {
     border-radius: 10px;
   }
 

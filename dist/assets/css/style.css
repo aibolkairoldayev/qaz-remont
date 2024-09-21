@@ -125,6 +125,7 @@ body {
   --color-2: #fff;
   --color-3: #fff;
   --color-9: #0D0D0D;
+  --Orange: #F8B540;
 }
 
 .container {
@@ -258,6 +259,10 @@ body {
 
 .body .white-btn:hover {
   background: #FFF8E8;
+}
+
+.body .yellow-btn {
+  background: var(--Orange, #F8B540);
 }
 
 .body .colortext {
@@ -411,11 +416,12 @@ body {
 }
 
 .body .header__top b {
-  color: var(--color-3, #FFF);
+  color: var(--Orange, #F8B540);
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-top: 20px;
 }
 
 .body .header__right {
@@ -442,7 +448,7 @@ body {
 
 .body .header__btn span {
   border-radius: 20px;
-  background: var(--color-3, #FFF);
+  background: var(--Orange, #F8B540);
   display: block;
   color: #000;
   text-align: center;
@@ -464,6 +470,10 @@ body {
   position: relative;
   cursor: pointer;
   min-width: 40px;
+}
+
+.body .header__mode img {
+  width: 24px;
 }
 
 .body .header__mode p {
@@ -498,6 +508,17 @@ body {
   line-height: normal;
 }
 
+.body .header__date span {
+  color: var(--color-3, #FFF);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  text-align: center;
+}
+
 .body .header__bot {
   padding: 12px 0 24px;
 }
@@ -515,7 +536,7 @@ body {
   color: var(--color-3, #FFF);
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
 }
 

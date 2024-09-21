@@ -48,11 +48,12 @@
                 height: 40px;
             }
             b {
-                color: var(--color-3, #FFF);
+                color: var(--Orange, #F8B540);
                 font-size: 13px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                margin-top: 20px;
             }
         }
         &__right {
@@ -71,7 +72,7 @@
             margin: 0 25px 0 35px;           
             span {
                 border-radius: 20px;
-                background: var(--color-3, #FFF);
+                background: var(--Orange, #F8B540);
                 display: block;
                 color: #000;
                 text-align: center;
@@ -91,6 +92,9 @@
             position: relative;
             cursor: pointer;
             min-width: 40px;
+            img {
+                width: 24px;
+            }
             &.desktop {
                 @media(max-width: 992px) {
                     display: none;
@@ -133,6 +137,16 @@
                 font-weight: 600;
                 line-height: normal;
             }
+            span {
+                color: var(--color-3, #FFF);
+                text-align: center;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal; 
+                display: block;
+                text-align: center;
+            }
         }
 
         &__bot {
@@ -145,7 +159,7 @@
                 color: var(--color-3, #FFF);
                 font-size: 16px;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: normal;
             }
         }
