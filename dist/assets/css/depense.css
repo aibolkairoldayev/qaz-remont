@@ -203,10 +203,6 @@
   margin: 0 60px;
 }
 
-.body .footer__content {
-  padding-left: 4px;
-}
-
 .body .made {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,7 +499,7 @@
 
 .body .banner2__calc {
   border-radius: 20px;
-  background: var(--color-2, #FFF);
+  background: var(--Orange, #F8B540);
   color: var(--color-1, #2B2A28);
   text-align: center;
   font-size: 22px;
@@ -583,7 +579,7 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
-  border: 1px solid var(--color-2, #FFF);
+  border: 1px solid var(--Orange, #F8B540);
   -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.23);
           box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.23);
   height: 60px;
@@ -601,7 +597,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--color-2, #FFF);
+  color: var(--Orange, #F8B540);
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -619,7 +615,7 @@
 }
 
 .body .projects__nav--item.active {
-  background: var(--color-2, #FFF);
+  background: var(--Orange, #F8B540);
   color: var(--color-5, #000);
   text-align: center;
   font-size: 24px;
@@ -784,7 +780,7 @@
   width: 280px;
   height: 70px;
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1379,6 +1375,22 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #999;
+}
+
+.body .reviews__city {
+  color: var(--Orange, #F8B540);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .reviews__bot {
+  padding-bottom: 20px;
 }
 
 .body .reviews__bot span {
@@ -1479,11 +1491,11 @@
   height: 70px;
   width: 100%;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.4);
+  background: #fff;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   margin-bottom: 24px;
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1492,7 +1504,7 @@
 }
 
 .body .ques__input::-webkit-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1500,7 +1512,7 @@
 }
 
 .body .ques__input::-moz-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1508,7 +1520,7 @@
 }
 
 .body .ques__input:-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1516,7 +1528,7 @@
 }
 
 .body .ques__input::-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1524,7 +1536,7 @@
 }
 
 .body .ques__input::placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1542,7 +1554,7 @@
   width: 100%;
   height: 70px;
   border-radius: 20px;
-  background-color: #6d6b6b;
+  background-color: #fff;
   margin-bottom: 24px;
 }
 
@@ -1564,7 +1576,7 @@
 }
 
 .body .ques__current b {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1601,7 +1613,7 @@
 }
 
 .body .ques__btn {
-  width: 325px;
+  width: 100%;
   height: 76px;
   color: var(--color-1, #2B2A28);
   text-align: center;
@@ -1628,9 +1640,20 @@
   border-radius: 20px;
 }
 
+.body .article__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .body .article__title {
   margin: 60px 0;
-  text-align: center;
 }
 
 .body .article__content {
@@ -1642,11 +1665,21 @@
 }
 
 .body .article__date {
-  margin-top: 50px;
-  font-size: 20px;
+  color: #000;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: var(--Orange, #F8B540);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .body .error {
@@ -1707,10 +1740,9 @@
 }
 
 .body .error__left {
-  width: 380px;
+  width: 400px;
   color: var(--color-2, #FFF);
   text-align: center;
-  font-family: "Rubik", sans-serif;
   font-size: 200px;
   font-style: normal;
   font-weight: 400;
@@ -1718,7 +1750,7 @@
 }
 
 .body .error__right {
-  width: calc(100% - 430px);
+  width: calc(100% - 550px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1737,12 +1769,15 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  max-width: 460px;
 }
 
 .body .error__btn {
   height: 60px;
   width: 330px;
   margin-top: 50px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .body .modal {
@@ -1787,11 +1822,11 @@
 
 .body .modal__input {
   border-radius: 20px;
-  background: #807f7e;
+  background: #1D1C1B;
   height: 70px;
   width: 100%;
   padding: 22px;
-  color: var(--color-2, #FFF);
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1800,7 +1835,7 @@
 }
 
 .body .modal__input::-webkit-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1808,7 +1843,7 @@
 }
 
 .body .modal__input::-moz-placeholder {
-  color: var(--color-2, #FFF);
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1816,7 +1851,7 @@
 }
 
 .body .modal__input:-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1824,7 +1859,7 @@
 }
 
 .body .modal__input::-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1832,7 +1867,7 @@
 }
 
 .body .modal__input::placeholder {
-  color: var(--color-2, #FFF);
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1850,7 +1885,7 @@
   width: 100%;
   height: 70px;
   border-radius: 20px;
-  background-color: #807f7e;
+  background-color: #000;
   margin-bottom: 24px;
 }
 
@@ -1863,6 +1898,10 @@
           justify-content: space-between;
   width: 100%;
   padding: 10px 20px;
+}
+
+.body .modal__current svg {
+  margin-top: 5px;
 }
 
 .body .modal__current svg path {
@@ -1908,16 +1947,15 @@
 }
 
 .body .modal__btn {
-  width: 325px;
+  width: 100%;
   height: 76px;
-  color: var(--color-1, #2B2A28);
+  color: #000;
   text-align: center;
-  font-family: "Rubik", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 60px auto 10px;
+  margin: 20px auto 10px;
 }
 
 .body .modal__wait {
@@ -2031,16 +2069,6 @@
   line-height: normal;
 }
 
-.body.white .projects__nav--item {
-  color: #0D0D0D;
-}
-
-.body.white .projects__nav--item.active {
-  border: 1px #0D0D0D;
-  background: #0D0D0D;
-  color: #fff;
-}
-
 .body.white .projects__big .slick-arrow svg circle {
   fill: #0D0D0D;
   opacity: 0.7;
@@ -2074,11 +2102,6 @@
 
 .body.white .method__item {
   border: 1px #0D0D0D solid;
-}
-
-.body.white .method__item img {
-  -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(19%) saturate(1167%) hue-rotate(41deg) brightness(96%) contrast(90%);
-          filter: brightness(0) saturate(100%) invert(0%) sepia(19%) saturate(1167%) hue-rotate(41deg) brightness(96%) contrast(90%);
 }
 
 .body.white .steps__title {
@@ -2169,6 +2192,10 @@
 
 .body.white .reviews__items .slick-arrow.slick-disabled svg path {
   stroke: #0D0D0D;
+}
+
+.body.white .reviews__top p {
+  color: #444;
 }
 
 .body.white .ques__title.main-title {
@@ -3071,9 +3098,6 @@
   .body .ques__btn {
     height: 40px;
     margin-bottom: 27px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     padding: 10px 20px;
     font-size: 15px;
     margin: 0 auto;
@@ -3087,18 +3111,12 @@
     font-size: 15px;
   }
 
-  .body .article__date {
-    font-size: 15px;
-    margin-top: 27px;
-  }
-
   .body .error__left {
     font-size: 150px;
   }
 
   .body .error__right b {
     font-size: 22px;
-    font-family: "Rubik", sans-serif;
     font-weight: 400;
   }
 

@@ -782,6 +782,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px;
 }
 
 .body .appl__title {
@@ -794,7 +795,7 @@
 }
 
 .body .appl__form input::-webkit-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -802,7 +803,7 @@
 }
 
 .body .appl__form input::-moz-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -810,7 +811,7 @@
 }
 
 .body .appl__form input:-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -818,7 +819,7 @@
 }
 
 .body .appl__form input::-ms-input-placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -826,7 +827,7 @@
 }
 
 .body .appl__form input::placeholder {
-  color: var(--color-2, #FFF);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -857,6 +858,11 @@
   width: 36px;
   height: 14px;
   margin-top: 3px;
+}
+
+.body .appl__current b {
+  font-weight: 400;
+  color: #000;
 }
 
 .body .appl__others {
@@ -1334,6 +1340,10 @@
 
   .body .appl__content {
     padding: 45px 25px;
+  }
+
+  .body .appl__bg img {
+    border-radius: 10px;
   }
 }
 
