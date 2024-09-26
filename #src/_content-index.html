@@ -1,27 +1,34 @@
 <main class="main homePage">
     <section class="banner">
-        <div class="banner__bg">
-            <picture>
-                <source srcset="./assets/img/banner.webp" type="image/webp">
-                <source srcset="./assets/img/banner.webp" type="image/pjp2">
-                <img src="assets/img/banner.png" alt="bg">            
-            </picture>            
-        </div>
-        <div class="container">
-            <div class="banner__info">
-                <div class="banner__title">
-                    Строительная компания полного цикла
-                </div>
-                <div class="banner__text">От идеи до реализации</div>
+        <div class="banner__item">
+            <div class="banner__bg">
+                <picture>
+                    <img src="assets/img/banner.png" alt="banner">
+                </picture>
             </div>
-
+            <div class="banner__content">
+                <div class="container">
+                    <h1 class="banner__title">Строительная компания полного цикла</h1>
+                    <div class="banner__text">От идеи до реализации</div>
+                    <!--надо сделать так чтобы через админку если ссылки не было эта кнопка убиралась. 
+                    можно сделать через класс active если его не будет кнопка бутед display none-->
+                    <div class="banner__btn active white-btn">Подробнее</div>
+                </div>
+            </div>
         </div>
-        <div class="banner__img">
-            <picture>
-                <source srcset="./assets/img/banner2.webp" type="image/webp">
-                <source srcset="./assets/img/banner2.webp" type="image/pjp2">
-                <img src="assets/img/banner2.png" alt="ban">
-            </picture>
+        <div class="banner__item">
+            <div class="banner__bg">
+                <picture>
+                    <img src="assets/img/banner2.png" alt="banner">
+                </picture>
+            </div>
+            <div class="banner__content">
+                <div class="container">
+                    <h1 class="banner__title">полного цикла Строительная компания </h1>
+                    <div class="banner__text">От идеи до реализации 2</div>
+                    <div class="banner__btn white-btn">Подробнее</div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -430,7 +437,7 @@
                                 </div>
                                 <input  type="hidden" class="main-hidden">
                             </div>
-                            <div class="comeus__btn white-btn submit-btn appl__btn" type="submit">Заказать звонок</div>
+                            <div class="comeus__btn white-btn submit-btn appl__btn" type="submit">Отправить заявку</div>
                         </form>
                     </div>
     

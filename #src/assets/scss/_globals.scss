@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
 }
-html, body { height: 100%; overflow-x: hidden;}
-body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; background: #fff;}
+html, body { height: 100%;}
+body { margin: 0; font-family: "Montserrat", sans-serif; background: #fff;}
 :root {
   --color-1: #2B2A28;
   --color-2: #fff;
@@ -144,6 +144,9 @@ body { margin: 0; font-family: "Montserrat", sans-serif; overflow-x: hidden; bac
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    &:hover {
+      background-color: #FDDB92;
+    }
   }
   .yellow-btn {
     background: var(--Orange, #F8B540);

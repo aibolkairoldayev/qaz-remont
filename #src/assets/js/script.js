@@ -259,3 +259,24 @@ $(document).ready(function() {
         adjustItemWidth();
     });
 });
+
+//fixed header func
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 150) {
+      $('.header').addClass('sticky');
+    }
+    else {
+      $('.header').removeClass('sticky');
+    }
+  });
+
+// main banner in main page arrows margin
+$(document).ready(function() {
+    console.log('ss');
+    
+    let ww = $(window).width()
+    let cw = $('.container').width()
+    let rl = (ww - cw) / 2 + 'px'
+    $('.banner .arrowLeft').css('left', rl)
+    $('.banner .arrowRight').css('right', rl)
+})

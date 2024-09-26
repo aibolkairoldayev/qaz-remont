@@ -98,6 +98,9 @@
             height: 60px;
             padding: 10px 31px;
             margin-right: 35px;
+            &:hover {
+                background-color: #FDDB92;
+            }
             @media(max-width: 576px) {
                 height: 40px;
                 font-size: 15px;
@@ -177,10 +180,18 @@
             }
         }
         &__video {
+            position: relative;
             img {
+                animation: spin 6s linear infinite;
                 @media(max-width: 576px) {
                     max-width: 80px;
                 }
+            }
+            .tringle {
+                position: absolute;
+                top: 40px;
+                left: 43px;
+                animation: none;
             }
         }
        
@@ -709,11 +720,11 @@
         &__input {
             width: 100%;
             border-radius: 20px;
-            background: rgba(255, 255, 255, 0.40);
+            background: #fff;
             backdrop-filter: blur(5px);
             height: 70px;
             margin-bottom: 30px;
-            color: var(--color-1, #2B2A28);
+            color: #000;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
@@ -733,10 +744,10 @@
         }
         &__btn {
             height: 76px;
-            width: 325px;
-            color: var(--color-1, #2B2A28);
+            width: 100%;
+            color: #000;
             text-align: center;
-            font-size: 22px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -1238,7 +1249,6 @@
         }
         &__title {
             width: 50%;
-            margin-top: 100px;
             @media(max-width: 992px) {
                 margin-top: 30px;
             }
@@ -1320,7 +1330,7 @@
         &__others {
             position: absolute;
             width: 100%;
-            bottom: -220px;
+            bottom: -276px;
             left: 0;
             border-radius: 24px;
             background: #FFF;
@@ -1845,10 +1855,6 @@
                         }
                     }
                 }
-            }
-            &__more {
-                background: #0D0D0D;
-                color: #FFF;
             }
         }
         .method {

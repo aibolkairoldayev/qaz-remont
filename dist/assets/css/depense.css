@@ -511,6 +511,10 @@
   margin-right: 35px;
 }
 
+.body .banner2__calc:hover {
+  background-color: #FDDB92;
+}
+
 .body .banner2__adv {
   max-width: 215px;
 }
@@ -564,6 +568,23 @@
 .body .banner2__item:last-child span {
   max-width: 170px;
   text-align: center;
+}
+
+.body .banner2__video {
+  position: relative;
+}
+
+.body .banner2__video img {
+  -webkit-animation: spin 6s linear infinite;
+          animation: spin 6s linear infinite;
+}
+
+.body .banner2__video .tringle {
+  position: absolute;
+  top: 40px;
+  left: 43px;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .body .projects {
@@ -950,12 +971,12 @@
 .body .steps__input {
   width: 100%;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.4);
+  background: #fff;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   height: 70px;
   margin-bottom: 30px;
-  color: var(--color-1, #2B2A28);
+  color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1005,10 +1026,10 @@
 
 .body .steps__btn {
   height: 76px;
-  width: 325px;
-  color: var(--color-1, #2B2A28);
+  width: 100%;
+  color: #000;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1480,7 +1501,6 @@
 
 .body .ques__title {
   width: 50%;
-  margin-top: 100px;
 }
 
 .body .ques__container {
@@ -1586,7 +1606,7 @@
 .body .ques__others {
   position: absolute;
   width: 100%;
-  bottom: -220px;
+  bottom: -276px;
   left: 0;
   border-radius: 24px;
   background: #FFF;
@@ -2093,11 +2113,6 @@
 
 .body.white .projects__big .slick-arrow.slick-disabled svg path {
   stroke: #0D0D0D;
-}
-
-.body.white .projects__more {
-  background: #0D0D0D;
-  color: #FFF;
 }
 
 .body.white .method__item {

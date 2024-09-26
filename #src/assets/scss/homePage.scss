@@ -1,7 +1,6 @@
 .body {
     .banner {
         height: 890px;
-        position: relative;
         @media (max-width: 992px) {
             height: 800px;
         }
@@ -14,99 +13,128 @@
         @media (max-width: 480px) {
             height: 460px;
         }
+        .slick-list, .slick-track {
+            height: 100%;
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1;
+            svg {
+                circle {
+                    fill: #fff;
+                }
+                path {
+                    stroke: #2B2A28;
+                }
+            }
+            &:hover svg circle {
+                fill: #FDDB92;
+            }
+            &.slick-disabled {
+                cursor: default;
+                svg {
+                    circle {
+                        fill: #6B6B6A;
+                        opacity: 0.7;
+                    }
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+        .arrowRight {
+            right: 0;
+        }
+        .arrowLeft {
+            left: 0;
+        }
+        &__item {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
         &__bg {
             position: absolute;
             height: 100%;
-            width: 50%;
+            width: 100%;
             right: 0;
             top: 0;
-            @media (max-width: 992px) {
-                width: 100%;
-                z-index: -1;
-                opacity: 0.7;
-              }
+            z-index: -1;
+            opacity: 0.4;
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
-        .container {
-            height: 100%;
-        }
-        &__info {
-            height: 100%;
-            padding-top: 17%;
-            width: 45%;
-            @media (max-width: 992px) {
-                width: 100%;
-            }
-            @media (max-width: 576px) {
-                padding-top: 40px;
-            }
-            @media (max-width: 480px) {
-                padding-top: 90px;
-            }
-        }
-
         &__title {
             color: var(--color-3, #FFF);
             font-size: 54px;
             font-style: normal;
             font-weight: 600;
-            line-height: 110%; /* 59.4px */
-            margin-bottom: 50px;
+            line-height: 110%; 
+            max-width: 700px;
             @media (max-width: 768px) {
-                font-size: 50px;
+                font-size: 48px;
             }
             @media (max-width: 576px) {
-                font-size: 43px;
-                margin-bottom: 25px;
+                font-size: 40px;
+                text-align: center;
             }
             @media (max-width: 480px) {
-                font-size: 32px;
+                font-size: 30px;
             }
         }
         &__text {
-            color: var(--color-3, #FFF);
+            color: var(--Orange, #F8B540);
             font-size: 20px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+            margin: 45px 0;
+            @media (max-width: 992px) {
+                margin: 30px 0;
+                font-size: 18px;
+            }
+            @media (max-width: 576px) {
+                margin: 20px 0;
+                font-size: 16px;
+                text-align: center;
+            }
+            @media (max-width: 480px) {                
+                font-size: 14px;
+            }
         }
-        &__img {
-            position: absolute;
-            bottom: 30px;   
-            left: calc(50% - 215px);
-            width: 430px;
-            height: 300px;
-            @media (max-width: 768px) {
-                width: 350px;
-                height: 240px;
-                left: calc(50% - 175px);
-            }
-            @media (max-width: 768px) {
-                left: unset;
-                right: 0;
-                width: 280px;
-                height: 190px;
-                bottom: 0;
-            }
-            @media (max-width: 480px) {
-                left: unset;
-                right: 0;
-                width: 160px;
-                height: 140px;
-                bottom: -23px;
-            }
-            img {
-                width: 100%;
+        &__content {
+            height: 100%;            
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 85px;
                 height: 100%;
-                object-fit: cover;
-                border-radius: 20px;
-                @media (max-width: 480px) {
-                    border-radius: 10px;
+                @media (max-width: 576px) {
+                    padding: 0 60px;
+                    justify-content: end;
                 }
+            }
+        }
+        &__btn {
+            height: 70px;
+            padding: 20px 40px;
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            &.active {
+                display: flex;
+            }
+            @media (max-width: 576px) {
+                margin: 0 auto 30px;
             }
         }
     }
@@ -156,6 +184,7 @@
             flex-direction: column;
             justify-content: start;
             padding: 10px 15px;
+         
         }
         &__item {
             position: relative;
@@ -169,7 +198,7 @@
             }
             b {
                 display: block;               
-                font-size: 19px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;  
@@ -992,16 +1021,6 @@
             }
             &__text {
                 color: var(--color-9, #0D0D0D);
-            }
-        }
-
-        .services {
-            &__item {
-                b {
-                    background: #fff;
-                    opacity: 0.8;
-                    color: var(--color-9, #0D0D0D);
-                }
             }
         }
 
