@@ -280,3 +280,18 @@ $(document).ready(function() {
     $('.banner .arrowLeft').css('left', rl)
     $('.banner .arrowRight').css('right', rl)
 })
+
+// open and close rekvizit modal
+if ($('.rekviz').length) {
+    function openReks() {
+        $('.rekviz').addClass('show');
+        $('body').css('overflow', 'hidden'); 
+    }  
+    function closeReks() {
+        $('.rekviz').removeClass('show');
+        $('body').css('overflow', 'unset'); 
+    }   
+    $('.rekviz__wrapper').click(()=> {
+        closeReks()
+    })
+}

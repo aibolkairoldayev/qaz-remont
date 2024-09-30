@@ -48,6 +48,7 @@ $('.news__items').slick({
 $('.partners__items').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
+    swipeToSlide: true,
     infinite: true,
     dots: false,
     arrows: false,

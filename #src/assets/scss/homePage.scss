@@ -64,11 +64,12 @@
             right: 0;
             top: 0;
             z-index: -1;
-            opacity: 0.4;
+            
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                filter: brightness(.6);
             }
         }
         &__title {
@@ -778,6 +779,9 @@
                 transform: translateY(-50%);
                 cursor: pointer;
                 z-index: 1;
+                @media(max-width: 576px) {
+                    top: 33%;
+                }
                 svg {
                     circle {
                         fill: #fff;
@@ -1015,14 +1019,6 @@
         }
     }
     &.white {
-        .banner {
-            &__title {
-              color: var(--color-9, #0D0D0D);
-            }
-            &__text {
-                color: var(--color-9, #0D0D0D);
-            }
-        }
 
         .about {
             &__text {
@@ -1073,24 +1069,41 @@
                     color: #444;
                 }
                 b {
-                    color: var(--color-9, #0D0D0D);
+                    color: #2B2A28;
                 }
                 p {
                     color: #444;
-                }
-                a {
-                    color: var(--color-9, #0D0D0D);
+                }               
+            }
+            &__items {
+                .slick-arrow {
                     svg {
-                        path {
-                            stroke: #0D0D0D;
+                        circle {
+                            fill: #F8B540;
                         }
-                    }
+                    }     
+                    &.slick-disabled {
+                        svg {
+                            circle {
+                                fill: #6B6B6A;
+                            }
+                        }
+                        &:hover {
+                            cursor: default;
+                            svg {
+                                circle {
+                                    fill: #6B6B6A;
+                                }
+                            }  
+                        }     
+                    }   
                     &:hover {
-                        color: #fddb92;
-                        svg path {
-                            stroke: #fddb92; 
-                        }
-                    }
+                        svg {
+                            circle {
+                                fill: #FDDB92;
+                            }
+                        }  
+                    }            
                 }
             }
         }
