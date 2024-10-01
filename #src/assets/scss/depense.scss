@@ -21,6 +21,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
+            filter: brightness(.7);
             img {
                 width: 100%;
                 height: 100%;
@@ -864,7 +865,7 @@
         }
 
         &__info {
-            max-height: 390px;
+            max-height: 365px;
             overflow: hidden;
             transition: .2s linear;
             &--item {
@@ -986,13 +987,17 @@
         &__item {
             display: flex;
             justify-content: space-between;
-            padding: 28px 0;
-            border-bottom: 1px solid #fff;
-            align-items: center;
+            padding: 32px;
+            align-items: center;            
+            border-radius: 20px;
+            margin-bottom: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
             @media(max-width: 768px) {
-                padding: 17px 0;
+                padding: 20px;
             }
             &.show {
+                border: 1px solid transparent;
+                background: #222;
                 @media(max-width: 576px) {
                     align-items: start;
                 }
@@ -1031,7 +1036,7 @@
             }
         }
         &__qu {
-            font-size: 36px;
+            font-size: 24px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -1047,13 +1052,14 @@
             }
         }
         &__ans {
-            font-size: 20px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%; /* 30px */
             max-height: 0;
             overflow-y: hidden;
             transition: .2s linear;
+            color: #999;
             @media(max-width: 768px) {
                 font-size: 15px;
             }
@@ -1105,6 +1111,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            color: #999;
             @media(max-width: 576px) {
                 font-size: 15px;
             }
@@ -1112,7 +1119,8 @@
     }
     .reviews {
         margin: 100px 0;
-        padding: 0 125px;
+        padding: 50px 125px;
+        background: #21201F;
         @media(max-width: 992px) {
             margin: 65px 0;
             padding: 0 50px;
@@ -1123,9 +1131,12 @@
         }
         &__title {
             margin-bottom: 30px;
+            &.main-title {
+                color: #fff;
+            }
         }
         &__item {
-            display: flex;
+            display: flex !important;
             justify-content: space-between;
             @media(max-width: 768px) {
                 flex-direction: column;
@@ -1166,26 +1177,24 @@
         }
         &__top {
             b {
-                font-size: 20px;
+                font-size: 24px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 500;
                 line-height: normal;
                 display: block;
-                margin-bottom: 15px;
+                margin-bottom: 22px;
+                color: #fff;
             }
             p {
-                font-size: 20px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
                 color: #999;
-                @media(max-width: 576px) {
-                    font-size: 15px;
-                }
             }
         }
         &__city {
-            color: var(--Orange, #F8B540);
+            color: var(--Orange, #F8B540) !important;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -1204,6 +1213,9 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                margin-bottom: 12px;
+                display: block;
+                color: #fff;
                 @media(max-width: 576px) {
                     font-size: 15px;
                 }
@@ -1224,7 +1236,7 @@
                 }
                 svg {
                     circle {
-                        fill: #fff;
+                        fill: #F8B540;
                     }
                     path {
                         stroke: #2B2A28;
@@ -1261,7 +1273,7 @@
         }
     }
     .ques {
-        height: 470px;
+        padding: 80px 70px;
         position: relative;
         @media(max-width: 768px) {
             height: auto;
@@ -1277,6 +1289,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                border-radius: 20px;
             }
         }
         .container {
@@ -2062,55 +2075,30 @@
             }
         }
         .faq {
-            &__right {
-                img {
-                    filter: brightness(0) saturate(100%) invert(0%) sepia(19%) saturate(1167%) hue-rotate(41deg) brightness(96%) contrast(90%);
+            &__item {
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                &.show {
+                    background: #514942;
+                    .faq__qu {
+                        color: #fff;
+                    }
+                    .faq__ans {
+                        color: #999;
+                    }
                 }
             }
-            &__item {
-                border-bottom: 1px solid #0D0D0D;
+           
+            &__qu {
+                color: #444;
+            }
+        }
+        .desc {
+            &__text {
+                color: #444;
             }
         }
         .reviews {
-            &__items {
-                .slick-arrow {
-                    svg {
-                        circle {
-                            fill: #0D0D0D;
-                            opacity: 0.7;
-                        }
-                        path {
-                            stroke: #D7D6D4;
-                        }
-                    }
-                    &:hover {
-                        svg {
-                            circle {
-                                fill: #FDDB92;
-                            }
-                            path {
-                                stroke: #fff;
-                            }
-                        }
-                    }
-                    &.slick-disabled {
-                        svg {
-                            circle {
-                                fill: #6B6B6A;
-                                opacity: 0.7;
-                            }
-                            path {
-                                stroke: #0D0D0D;
-                            }
-                        }
-                    }
-                }
-            }
-            &__top {
-                p {
-                    color: #444;
-                }
-            }
+            background: #514942;           
         }
         .ques {
             &__title {
