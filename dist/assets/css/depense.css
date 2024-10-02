@@ -241,7 +241,7 @@
 }
 
 .body .socials {
-  max-width: 275px;
+  max-width: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,8 +254,8 @@
 }
 
 .body .socials a {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #171512;
   padding: 5px;
@@ -273,8 +273,8 @@
 }
 
 .body .socials img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .body .socials.light {
@@ -545,7 +545,7 @@
 }
 
 .body .banner2__adv li::before {
-  content: url(../img/icons/star.svg);
+  content: url(../images/icons/star.svg);
   position: absolute;
   left: -20px;
   top: 0;
@@ -711,7 +711,7 @@
 
 .body .projects__item--btns span {
   border-radius: 20px;
-  border: 1px solid var(--color-2, #FFF);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.23);
           box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.23);
   height: 37px;
@@ -827,7 +827,7 @@
   width: 280px;
   height: 70px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -847,7 +847,7 @@
 
 .body .method__item {
   border-radius: 14px;
-  border: 1px solid #FFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 50px 35px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,7 +983,7 @@
 }
 
 .body .steps__items li::before {
-  content: url(../img/icons/star.svg);
+  content: url(../images/icons/star.svg);
   position: absolute;
   left: -20px;
   top: 0px;
@@ -2710,7 +2710,7 @@
   }
 
   .body .projects {
-    margin: 30px 0;
+    margin: 30px 0 50px;
   }
 
   .body .projects__nav {
@@ -2718,6 +2718,10 @@
   }
 
   .body .projects__nav--item {
+    font-size: 20px;
+  }
+
+  .body .projects__nav--item:first-child.active {
     font-size: 20px;
   }
 
@@ -2843,6 +2847,7 @@
 
   .body .ques {
     height: auto;
+    padding: 30px 20px;
   }
 
   .body .ques__content {
@@ -2982,6 +2987,10 @@
     width: 40px;
   }
 
+  .body .footer__left--reks span {
+    font-size: 16px;
+  }
+
   .body .footer__menu {
     width: 100%;
     padding-left: 70px;
@@ -2989,6 +2998,10 @@
 
   .body .footer__menu li {
     margin-bottom: 20px;
+  }
+
+  .body .footer__btn {
+    font-size: 16px;
   }
 
   .body .footer__bot .container {
@@ -3002,7 +3015,17 @@
   }
 
   .body .footer__policy {
-    margin: 20px 0;
+    margin: 32px 0;
+  }
+
+  .body .socials a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .body .socials img {
+    width: 25px;
+    height: 25px;
   }
 
   .body .editors b,
@@ -3047,9 +3070,10 @@
   }
 
   .body .banner2__calc {
-    height: 40px;
-    font-size: 15px;
-    font-family: "Rubik", sans-serif;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
   }
 
   .body .banner2__adv {
@@ -3075,8 +3099,12 @@
   }
 
   .body .projects__nav--item {
-    font-size: 15px;
+    font-size: 14px;
     height: 44px;
+  }
+
+  .body .projects__nav--item:first-child.active {
+    font-size: 14px;
   }
 
   .body .projects__content {
@@ -3094,12 +3122,21 @@
   }
 
   .body .projects__item--title {
-    font-size: 30px;
+    font-size: 22px;
     margin: 17px 0;
+  }
+
+  .body .projects__item--btns span {
+    font-size: 12px;
   }
 
   .body .projects__big--item {
     height: 270px;
+  }
+
+  .body .projects__big .slick-arrow svg {
+    width: 27px;
+    height: 27px;
   }
 
   .body .projects__small--item {
@@ -3117,8 +3154,6 @@
 
   .body .projects__more {
     height: 40px;
-    font-size: 18px;
-    font-family: "Rubik", sans-serif;
   }
 
   .body .method__title {
@@ -3270,10 +3305,19 @@
     top: 120px;
   }
 
+  .body .ques-container.container {
+    margin: 0;
+  }
+
+  .body .ques__bg img {
+    border-radius: 0;
+  }
+
   .body .ques__input {
-    height: 40px;
-    margin-bottom: 27px;
-    font-size: 15px;
+    height: 50px;
+    margin-bottom: 17px;
+    font-size: 16px;
+    border-radius: 10px;
   }
 
   .body .ques__input::-webkit-input-placeholder {
@@ -3297,7 +3341,7 @@
   }
 
   .body .ques__select {
-    height: 40px;
+    height: 50px;
     margin-bottom: 27px;
   }
 
@@ -3306,8 +3350,8 @@
   }
 
   .body .ques__btn {
-    height: 40px;
-    margin-bottom: 27px;
+    height: 50px;
+    margin-bottom: 17px;
     padding: 10px 20px;
     font-size: 15px;
     margin: 0 auto;
@@ -3381,6 +3425,7 @@
 
   .body .footer__left--reks {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .body .footer__title {
@@ -3393,12 +3438,8 @@
     margin: 15px 0 10px;
   }
 
-  .body .footer__policy {
-    margin: 16px 0;
-  }
-
   .body .banner2 {
-    height: 600px;
+    height: auto;
   }
 
   .body .banner2__top {
@@ -3423,7 +3464,7 @@
   }
 
   .body .projects__item--title {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .body .projects__big--item {
@@ -3431,11 +3472,16 @@
   }
 
   .body .projects__more {
-    font-size: 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 22px;
   }
 
   .body .method__title {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .body .method__item p {

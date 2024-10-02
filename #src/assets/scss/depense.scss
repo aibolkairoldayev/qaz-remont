@@ -12,7 +12,7 @@
             height: 700px;
         }
         @media(max-width: 480px) {
-            height: 600px;
+            height: auto;
         }
         &__bg {
             position: absolute;
@@ -103,9 +103,10 @@
                 background-color: #FDDB92;
             }
             @media(max-width: 576px) {
-                height: 40px;
-                font-size: 15px;
-                font-family: "Rubik", sans-serif;
+                height: 45px;
+                font-size: 16px;
+                border-radius: 10px;
+                padding: 10px;
             }
             @media(max-width: 480px) {
                 margin-right: 23px;
@@ -137,7 +138,7 @@
                 position: relative;
                 padding-left: 40px;
                 &::before {
-                    content: url(../img/icons/star.svg);
+                    content: url(../images/icons/star.svg);
                     position: absolute;
                     left: -20px;
                     top: 0;
@@ -216,7 +217,7 @@
             margin: 70px 0;
         }
         @media(max-width: 768px) {
-            margin: 30px 0;
+            margin: 30px 0 50px; 
         }
         &__title {
             text-align: center;
@@ -254,12 +255,18 @@
                    font-size: 20px;
                 }
                 @media(max-width: 576px) {
-                    font-size: 15px;
+                    font-size: 14px;
                     height: 44px;
                 }
                 &:first-child {
                     &.active {
                         border-radius: 20px 0 0 20px;
+                        @media(max-width: 768px) {
+                            font-size: 20px;
+                         }
+                         @media(max-width: 576px) {
+                             font-size: 14px;
+                         }
                     }
                 }
                 &:last-child {
@@ -327,18 +334,18 @@
                 line-height: normal;
                 margin: 30px 0;
                 @media(max-width: 576px) {
-                    font-size: 30px;
+                    font-size: 22px;
                     margin: 17px 0;
                 }
                 @media(max-width: 480px) {
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             }
             &--btns {
                 display: flex;
                 span {
                     border-radius: 20px;
-                    border: 1px solid var(--color-2, #FFF);
+                    border: 1px solid rgba(255, 255, 255, 0.20);
                     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.23);
                     height: 37px;
                     text-align: center;
@@ -352,6 +359,9 @@
                     &:hover {
                         color: #FDDB92;
                         border: 1px solid #FDDB92;
+                    }
+                    @media(max-width: 576px) {
+                        font-size: 12px;
                     }
                 }
             }
@@ -393,6 +403,10 @@
                     }
                     path {
                         stroke: #2B2A28;
+                    }
+                    @media(max-width: 576px) {
+                        width: 27px;
+                        height: 27px;
                     }
                 }
                 &:hover svg circle {
@@ -453,17 +467,18 @@
             width: 280px;
             height: 70px;
             margin: 0 auto;
-            font-size: 20px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             @media(max-width: 576px) {
                 height: 40px;
-                font-size: 18px;
-                font-family: "Rubik", sans-serif;   
             }
             @media(max-width: 480px) {
-                font-size: 15px;
+                font-size: 14px;
+                border-radius: 10px;
+                width: fit-content;
+                padding: 10px 22px;
             }
         }
     }
@@ -474,7 +489,7 @@
                 margin-bottom: 30px;
             }
             @media (max-width: 480px) {
-                margin-bottom: 22px;
+                margin-bottom: 24px;
             }
         }
         &__items {
@@ -494,7 +509,7 @@
         }
         &__item {
             border-radius: 14px;
-            border: 1px solid #FFF;
+            border: 1px solid rgba(255, 255, 255, 0.20);
             padding: 50px 35px 35px;
             display: flex;
             flex-direction: column;
@@ -712,7 +727,7 @@
                 position: relative;
                 padding-left: 40px;
                 &::before {
-                    content: url(../img/icons/star.svg);
+                    content: url(../images/icons/star.svg);
                     position: absolute;
                     left: -20px;
                     top: 0px;
@@ -1277,6 +1292,14 @@
         position: relative;
         @media(max-width: 768px) {
             height: auto;
+            padding: 30px 20px;
+        }
+        &-container {
+            &.container {
+                @media(max-width: 576px) {
+                    margin: 0;
+                } 
+            }
         }
         &__bg {
             position: absolute;
@@ -1290,6 +1313,9 @@
                 width: 100%;
                 object-fit: cover;
                 border-radius: 20px;
+                @media(max-width: 576px) {
+                    border-radius: 0;
+                } 
             }
         }
         .container {
@@ -1334,9 +1360,10 @@
             line-height: normal;
             padding: 10px 20px;
             @media(max-width: 576px) {
-                height: 40px;
-                margin-bottom: 27px;
-                font-size: 15px;
+                height: 50px;
+                margin-bottom: 17px;
+                font-size: 16px;
+                border-radius: 10px;
             }
             &::placeholder {
                 color: #000;
@@ -1359,7 +1386,7 @@
             background-color: #fff;
             margin-bottom: 24px;
             @media(max-width: 576px) {
-                height: 40px;
+                height: 50px;
                 margin-bottom: 27px;
             }
         }
@@ -1420,8 +1447,8 @@
             font-weight: 400;
             line-height: normal;
             @media(max-width: 576px) {
-                height: 40px;
-                margin-bottom: 27px;
+                height: 50px;
+                margin-bottom: 17px;
                 padding: 10px 20px;
                 font-size: 15px;
                 margin: 0 auto;

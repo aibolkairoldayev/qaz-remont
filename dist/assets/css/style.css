@@ -1592,10 +1592,6 @@ body {
     padding-top: 40px;
   }
 
-  .body .main-title {
-    font-size: 24px;
-  }
-
   .body .header {
     height: 40px;
   }
@@ -1676,7 +1672,7 @@ body {
 
 @media (max-width: 480px) {
   .body .main-title {
-    font-size: 21px;
+    font-size: 24px;
   }
 
   .body .header__content {
