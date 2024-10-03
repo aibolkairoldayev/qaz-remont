@@ -1,7 +1,3 @@
-.body .footer {
-  border-top: 2px solid var(--color-2, #FFF);
-}
-
 .body .footer__top {
   background: #21201F;
 }
@@ -279,10 +275,6 @@
 
 .body .socials.light {
   display: none;
-}
-
-.body.white .footer {
-  border-top: 2px #0D0D0D solid;
 }
 
 .body.white .footer__top {
@@ -976,6 +968,10 @@
   margin-bottom: 35px;
 }
 
+.body .steps__items {
+  background-color: transparent !important;
+}
+
 .body .steps__items li {
   position: relative;
   padding-left: 40px;
@@ -1091,6 +1087,19 @@
   margin: 0 20px;
 }
 
+.body .tarif__item.show .tarif__btn {
+  background: var(--color-1, #2B2A28);
+}
+
+.body .tarif__item.show .tarif__btn img {
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(102%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(102%);
+}
+
+.body .tarif__item.show .tarif__less {
+  color: #fff;
+}
+
 .body .tarif__item.show .tarif__less {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,10 +1190,17 @@
 
 .body .tarif__info--item ul li {
   color: #999;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 0.5px solid rgba(107, 107, 106, 0.3);
+}
+
+.body .tarif__info--item ul li:last-child {
+  border-bottom: none;
 }
 
 .body .tarif__btn {
@@ -1204,7 +1220,7 @@
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .body .tarif__btn b {
@@ -1218,7 +1234,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #000;
-  font-size: 16px;
+  font-size: 16px !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1400,7 +1416,7 @@
 
 .body .reviews {
   margin: 100px 0;
-  padding: 50px 125px;
+  padding: 0 125px;
   background: #21201F;
 }
 
@@ -1468,7 +1484,7 @@
 
 .body .reviews__city {
   color: var(--Orange, #F8B540) !important;
-  font-size: 16px;
+  font-size: 16px !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2284,19 +2300,6 @@
   background: #514942;
 }
 
-.body.white .tarif__item.show .tarif__btn {
-  background: var(--color-1, #2B2A28);
-}
-
-.body.white .tarif__item.show .tarif__btn img {
-  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(102%);
-          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(102%);
-}
-
-.body.white .tarif__item.show .tarif__less {
-  color: #fff;
-}
-
 .body.white .tarif__items .slick-arrow svg circle {
   fill: #0D0D0D;
   opacity: 0.7;
@@ -2618,7 +2621,7 @@
 
   .body .reviews {
     margin: 65px 0;
-    padding: 0 50px;
+    padding: 50px;
   }
 
   .body .reviews__items .arrowRight {
@@ -2673,7 +2676,7 @@
   }
 
   .body .footer__mid {
-    padding: 0;
+    padding: 30px 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2845,6 +2848,10 @@
     width: 100%;
   }
 
+  .body .reviews__bot {
+    margin-top: 22px;
+  }
+
   .body .ques {
     height: auto;
     padding: 30px 20px;
@@ -2989,11 +2996,14 @@
 
   .body .footer__left--reks span {
     font-size: 16px;
+    display: block;
+    text-align: center;
   }
 
   .body .footer__menu {
     width: 100%;
     padding-left: 70px;
+    margin-bottom: 20px;
   }
 
   .body .footer__menu li {
@@ -3021,11 +3031,18 @@
   .body .socials a {
     width: 40px;
     height: 40px;
+    margin: 0 8px;
   }
 
   .body .socials img {
     width: 25px;
     height: 25px;
+  }
+
+  .body .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .body .editors b,
@@ -3232,8 +3249,20 @@
 
   .body .tarif__item {
     margin: 0;
-    padding: 12px 16px;
+    padding: 20px 20px 25px;
     margin-bottom: 25px;
+  }
+
+  .body .tarif__item b {
+    font-size: 20px;
+  }
+
+  .body .tarif__info--item {
+    border-radius: 10px;
+  }
+
+  .body .tarif__btn {
+    border-radius: 10px;
   }
 
   .body .tarif__items .arrowRight {
@@ -3266,17 +3295,17 @@
     font-size: 20px;
   }
 
-  .body .desc__title {
-    margin-bottom: 13px;
+  .body .desc__img img {
+    border-radius: 10px;
   }
 
   .body .desc__text {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .body .reviews {
     margin: 36px 0;
-    padding: 0 10px;
+    padding: 50px 10px 15px;
   }
 
   .body .reviews__img {
@@ -3287,22 +3316,45 @@
     border-radius: 10px;
   }
 
+  .body .reviews__top b {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .body .reviews__top p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .body .reviews__city {
+    font-size: 14px !important;
+  }
+
   .body .reviews__bot {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 22px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .body .reviews__bot span {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .body .reviews__items .slick-arrow {
     top: 120px;
+  }
+
+  .body .reviews__items .slick-arrow svg {
+    width: 26px;
+    height: 26px;
   }
 
   .body .ques-container.container {
@@ -3489,7 +3541,7 @@
   }
 
   .body .steps {
-    margin: 45px 0;
+    margin: 45px 0 0;
     padding: 30px 0 50px;
   }
 
@@ -3497,12 +3549,16 @@
     padding: 15px 10px;
   }
 
+  .body .steps__title {
+    text-align: center;
+  }
+
   .body .steps__items li {
     margin-bottom: 18px;
   }
 
   .body .tarif__title {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
 
   .body .faq__title {

@@ -822,6 +822,11 @@
   border-radius: 20px;
 }
 
+.body .contacts__title {
+  font-size: 36px;
+  color: #fff;
+}
+
 .body .appl {
   margin-bottom: 150px;
   margin-top: 30px;
@@ -1028,7 +1033,7 @@
 }
 
 .body.white .contacts__info {
-  border: 2px #0D0D0D solid;
+  border: 1px #C1C1C1 solid;
 }
 
 .body.white .contacts__address p {
@@ -1037,6 +1042,10 @@
 
 .body.white .contacts a {
   color: var(--color-9, #0D0D0D);
+}
+
+.body.white .contacts__title {
+  color: #2B2A28;
 }
 
 .body.white .appl__title.main-title {
@@ -1420,6 +1429,14 @@
 
   .body .partners__title {
     margin-bottom: 25px;
+  }
+
+  .body .contacts__info {
+    padding: 30px 0;
+  }
+
+  .body .contacts__map {
+    height: 450px;
   }
 
   .body .appl {

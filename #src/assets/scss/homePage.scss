@@ -880,6 +880,9 @@
                 height: 300px;
                 margin-bottom: 35px;
             }
+            @media(max-width: 576px) {
+                padding: 30px 0;
+            }
         }
         &__address {
             p {
@@ -904,6 +907,9 @@
                 width: 100%;
                 height: 400px;
             }
+            @media(max-width: 576px) {                
+                height: 450px;
+            }
             iframe {
                 width: 100%;
                 height: 100%;
@@ -912,6 +918,10 @@
                     border-radius: 10px;
                 }
             }
+        }
+        &__title {
+            font-size: 36px;
+            color: #fff;
         }
     }
     .appl {
@@ -1136,7 +1146,7 @@
 
         .contacts {
             &__info {
-                border: 2px #0D0D0D solid;
+                border: 1px #C1C1C1 solid;
             }
             &__address {
                 p {
@@ -1145,6 +1155,9 @@
             }
             a {
                 color: var(--color-9, #0D0D0D);
+            }
+            &__title {
+                color: #2B2A28;
             }
         }
 
