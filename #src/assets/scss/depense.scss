@@ -21,7 +21,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            filter: brightness(.7);
+            filter: brightness(.4);
             img {
                 width: 100%;
                 height: 100%;
@@ -113,7 +113,7 @@
             }
         }
         &__adv {
-            max-width: 255px;
+            max-width: 280px;
             &.desktop {
                 @media(max-width: 992px) {
                     display: none;
@@ -125,7 +125,7 @@
                 max-width: unset;
             }
             @media(max-width: 576px) {
-                padding: 0 40px;
+                padding: 0;
                 grid-template-columns: 1fr;
             }
             li {
@@ -136,14 +136,22 @@
                 line-height: normal;
                 margin-bottom: 30px;
                 position: relative;
-                padding-left: 40px;
-                &::before {
-                    content: url(../images/icons/star.svg);
+                padding-left: 70px;
+                @media(max-width: 576px) {
+                    padding-left: 40px;
+                }
+                svg {
+                    width: 57px;
+                    height: 56px;
                     position: absolute;
-                    left: -20px;
-                    top: 0;
                     top: 50%;
                     transform: translateY(-28px);
+                    left: 0;
+                    @media(max-width: 576px) {
+                        width: 32px;
+                        height: 32px;
+                        transform: translateY(-16px);
+                    }
                 }
                 @media(max-width: 992px) {
                     margin-bottom: 20px;
@@ -1138,6 +1146,7 @@
                 border-radius: 20px;
                 @media(max-width: 576px) {
                     border-radius: 10px;
+                    max-height: 300px;
                 }
             }
         }
@@ -1603,7 +1612,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 20%;
+            padding: 0 130px 20%;
             @media(max-width: 768px) {
                 flex-direction: column;
                 justify-content: center;
@@ -1657,7 +1666,7 @@
         &__btn {
             height: 60px;
             width: 330px;
-            margin-top: 50px;
+            margin-top: 20px;
             font-size: 22px;
             font-weight: 500;   
             @media(max-width: 576px) {
@@ -1700,6 +1709,7 @@
             left: 0;
             top: 0;
             width: 500px;
+            z-index: -1;
         }
         &__close {
             position: absolute;

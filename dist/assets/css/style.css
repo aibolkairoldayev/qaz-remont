@@ -1175,9 +1175,9 @@ body {
 }
 
 .body .calcitemtype {
-  height: 240px;
+  height: 220px;
   border-radius: 20px;
-  background: #aaaaa9;
+  background: #0F0F0E;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1192,8 +1192,7 @@ body {
 }
 
 .body .calcitemtype:has(input[type=radio]:checked) {
-  border: 3px solid #fff;
-  background-color: #fff;
+  background: var(--Orange, #F8B540);
   cursor: default;
 }
 
@@ -1216,7 +1215,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
+  max-height: 150px;
 }
 
 .body .calcitemtype b {
@@ -1227,12 +1227,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: var(--color-3, #FFF);
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
-  height: 90px;
+  height: 70px;
   padding: 0 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .body .calc2__item {
@@ -1414,10 +1418,6 @@ body {
 @media (max-width: 1600px) {
   .body .calc__content {
     padding: 25px 60px 25px 40px;
-  }
-
-  .body .calcitemtype {
-    height: 210px;
   }
 }
 
@@ -1662,7 +1662,7 @@ body {
   }
 
   .body .calcitemtype {
-    height: 170px;
+    height: 180px;
   }
 
   .body .calc2__item b {
