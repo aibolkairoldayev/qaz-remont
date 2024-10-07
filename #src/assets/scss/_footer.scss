@@ -1,5 +1,7 @@
 .body {
-    .footer {        
+    .footer {    
+        position: relative;
+        z-index: 2;    
         &__top {
             background: #21201F;
             .container {

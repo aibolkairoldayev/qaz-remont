@@ -1,5 +1,6 @@
 .body .banner {
   height: 890px;
+  z-index: 2;
 }
 
 .body .banner .slick-list,
@@ -705,6 +706,7 @@
 
 .body .news__items {
   padding: 0 75px;
+  z-index: 2;
 }
 
 .body .news__items .slick-arrow {

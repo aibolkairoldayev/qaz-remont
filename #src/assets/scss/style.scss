@@ -133,6 +133,42 @@
         &.show {
             display: block;
         }
+        &__bg {
+            position: absolute;
+            bottom: -20%;
+            left: -50px;
+            z-index: -1;
+        }
+        &__bg2 {
+            position: absolute;
+            top: -20%;
+            right: -50px;
+            z-index: -1;
+        }
+        &__close {
+            position: absolute;
+            top: 35px;
+            right: 70px;
+            cursor: pointer;
+            @media (max-width: 1200px) {
+                top: 20px;
+                right: 20px;
+            }
+            svg {
+                circle {
+                    fill: #fff;
+                    @media (max-width: 1200px) {
+                        fill: transparent;
+                    }
+                }
+                path {
+                    fill: #000;
+                    @media (max-width: 1200px) {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
         &__content {
             top: 0;
             max-width: 1316px;
@@ -145,6 +181,7 @@
             max-height: 700px;
             overflow-y: scroll;
             margin-bottom: 100px;
+            position: relative;
             @media(max-width: 1600px) {
                 padding: 25px 60px 25px 40px;
             }
@@ -191,6 +228,9 @@
         }
         &__title {
             margin-bottom: 27px;
+            @media (max-width: 1200px) {
+                padding-right: 50px;
+            }
             @media (max-width: 576px) {
                 margin-bottom: 18px;
             }
@@ -225,6 +265,8 @@
                 @media (max-width: 480px) {
                     padding: 10px 9px;
                     min-width: 21%;
+                    position: relative;
+                    left: 20px;
                 }
                 &:first-child {
                     left: 0;
@@ -503,6 +545,15 @@
                 background-color: #0D0D0D;
                 color: #fff;
             }
+            &__close {
+                svg {
+                    path {
+                        @media(max-width: 1200px) {
+                            fill: #000;
+                        }
+                    }
+                }
+            }
             &__item {
                 &--bot {
                     input {
@@ -556,4 +607,84 @@
             }
         }
     }
+}
+
+.dust {
+    position: absolute;
+    z-index: 1;
+}
+.dust1 {
+    top: 0;
+    transform: translateY(-50%);
+}
+.dust2 {
+    top: 20%;
+    @media (max-width: 576px) {
+        top: 40%;
+    }
+}
+.dust3 {
+    top: 80%;
+    transform: translateY(50%);
+    @media (max-width: 576px) {
+        transform: translateY(70%);
+    }
+}
+.dust4 {
+    bottom: 0;
+    transform: translateY(220%);
+    @media (max-width: 576px) {
+        transform: translateY(300%);
+    }
+}
+
+.dust5 {
+    top: 10%;
+}
+
+.dust6 {
+    top: -40%;
+    right: 0;
+    @media(max-width: 576px) {
+        top: 40%;
+    }
+}
+
+.dust7 {
+    top: 0;
+    @media(max-width: 576px) {
+        transform: translateY(150%);
+    }
+}
+
+.dust8 {
+    top: 50%;
+    @media(max-width: 576px) {
+        top: 70%;
+    }
+}
+
+.dust9 {
+    top: 45%;
+    max-height: 900px;
+}
+
+.dust10 {
+    display: none;
+    bottom: 0;
+    
+    @media(max-width: 576px) {
+        display: block;
+    }
+}
+
+.dust11 {
+    top: 10%;
+    right: 0;
+}
+
+.dust12 {
+    bottom: 0;
+    transform: translateY(-50%);
+    left: 0;
 }

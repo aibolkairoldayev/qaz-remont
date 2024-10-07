@@ -33,6 +33,10 @@ body { margin: 0; font-family: "Montserrat", sans-serif; background: #fff;}
   }
 }
 
+.container-bg {
+  position: relative;       
+}
+
 .main {
   padding-top: 125px;
   @media (max-width: 992px) {

@@ -5,6 +5,7 @@
     .banner2 {
         height: 890px;
         position: relative;
+        z-index: 2;
         @media(max-width: 992px) {
             height: 800px;
         }
@@ -491,6 +492,7 @@
         }
     }
     .method {
+        position: relative;
         &__title {
             margin-bottom: 50px;
             @media (max-width: 576px) {
@@ -670,6 +672,7 @@
     }
     .steps {
         margin: 100px 0;
+        position: relative;
         @media(max-width: 1200px) {
             margin: 70px 0;
         }
@@ -682,7 +685,8 @@
             padding: 60px 75px;
             height: 100%;
             display: flex;
-            justify-content: space-between;          
+            justify-content: space-between;     
+            z-index: 2;     
             @media(max-width: 992px) {
                 flex-direction: column;
                 padding: 20px 30px 25px;
@@ -1144,9 +1148,10 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 20px;
+                max-height: 310px;
                 @media(max-width: 576px) {
                     border-radius: 10px;
-                    max-height: 300px;
+                    max-height: 240px;
                 }
             }
         }
@@ -1172,8 +1177,10 @@
     }
     .reviews {
         margin: 100px 0;
-        padding: 0 125px;
+        padding: 50px 125px;
         background: #21201F;
+        z-index: 2;
+        position: relative;
         @media(max-width: 992px) {
             margin: 65px 0;
             padding: 50px;

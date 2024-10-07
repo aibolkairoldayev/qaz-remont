@@ -277,8 +277,18 @@ $(document).ready(function() {
     let ww = $(window).width()
     let cw = $('.container').width()
     let rl = (ww - cw) / 2 + 'px'
+    let rrl = '-' + rl
     $('.banner .arrowLeft').css('left', rl)
     $('.banner .arrowRight').css('right', rl)
+    $('.dust1').css('left', rrl)
+    $('.dust2').css('right', rrl)
+    $('.dust3').css('right', rrl)
+    $('.dust5').css('right', rrl)
+    $('.dust8').css('right', rrl)
+    $('.dust4').css('left', rrl)
+    $('.dust7').css('left', rrl)
+    $('.dust9').css('left', rrl)
+    $('.dust10').css('left', rrl)
 })
 
 // open and close rekvizit modal
