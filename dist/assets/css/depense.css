@@ -3439,11 +3439,22 @@
   }
 
   .body .article__img {
-    height: 330px;
+    height: 230px;
+  }
+
+  .body .article__title {
+    text-wrap: nowrap;
+    max-width: calc(100% - 120px);
   }
 
   .body .article__content {
     font-size: 15px;
+  }
+
+  .body .article__date {
+    position: relative;
+    top: -85px;
+    left: -15px;
   }
 
   .body .error__left {

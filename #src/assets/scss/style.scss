@@ -611,7 +611,7 @@
 
 .dust {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 .dust1 {
     top: 0;
@@ -632,9 +632,10 @@
 }
 .dust4 {
     bottom: 0;
-    transform: translateY(220%);
+    transform: translateY(300%);
+    max-height: 1000px;
     @media (max-width: 576px) {
-        transform: translateY(300%);
+        transform: translateY(400%);
     }
 }
 
@@ -679,12 +680,16 @@
 }
 
 .dust11 {
-    top: 10%;
-    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
 }
 
 .dust12 {
     bottom: 0;
-    transform: translateY(-50%);
-    left: 0;
+    transform: translateY(15%);
+    right: 0;
+    @media(max-width: 576px) {
+        transform: translateY(-20%);
+    }
 }

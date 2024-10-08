@@ -842,15 +842,22 @@
             }
         }
         &__items {
-            img {
-                margin: 0 24px;
-                opacity: 0.8;
-                @media(max-width: 768px) {
-                  margin: 0 12px;  
-                }
+            img {                
+                opacity: 0.8;                
                 &:hover {
                     opacity: 1;
                 }
+            }
+        }
+        &__wrapper {
+            margin: 0 24px;
+            height: 240px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            @media(max-width: 768px) {
+                margin: 0 12px;  
+                height: 90px;
             }
         }
     }

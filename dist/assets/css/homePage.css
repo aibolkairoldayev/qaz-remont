@@ -758,12 +758,25 @@
 }
 
 .body .partners__items img {
-  margin: 0 24px;
   opacity: 0.8;
 }
 
 .body .partners__items img:hover {
   opacity: 1;
+}
+
+.body .partners__wrapper {
+  margin: 0 24px;
+  height: 240px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .body .contacts {
@@ -1215,8 +1228,9 @@
     padding: 45px 20px 30px;
   }
 
-  .body .partners__items img {
+  .body .partners__wrapper {
     margin: 0 12px;
+    height: 90px;
   }
 
   .body .contacts {

@@ -1451,7 +1451,7 @@ body {
 
 .dust {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 .dust1 {
@@ -1474,9 +1474,10 @@ body {
 
 .dust4 {
   bottom: 0;
-  -webkit-transform: translateY(220%);
-      -ms-transform: translateY(220%);
-          transform: translateY(220%);
+  -webkit-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+          transform: translateY(300%);
+  max-height: 1000px;
 }
 
 .dust5 {
@@ -1507,16 +1508,19 @@ body {
 }
 
 .dust11 {
-  top: 10%;
-  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .dust12 {
   bottom: 0;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
+  -webkit-transform: translateY(15%);
+      -ms-transform: translateY(15%);
+          transform: translateY(15%);
+  right: 0;
 }
 
 @media (max-width: 1600px) {
@@ -1805,9 +1809,9 @@ body {
   }
 
   .dust4 {
-    -webkit-transform: translateY(300%);
-        -ms-transform: translateY(300%);
-            transform: translateY(300%);
+    -webkit-transform: translateY(400%);
+        -ms-transform: translateY(400%);
+            transform: translateY(400%);
   }
 
   .dust6 {
@@ -1826,6 +1830,12 @@ body {
 
   .dust10 {
     display: block;
+  }
+
+  .dust12 {
+    -webkit-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 
