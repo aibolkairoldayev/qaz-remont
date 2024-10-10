@@ -452,13 +452,16 @@
                 }
                 &.slick-current {
                     border-radius: 20px;
-                    border: 3px solid var(--color-2, #FFF);
+                    img {
+                        border: 2px solid var(--Orange, #F8B540);
+                    }
                 }
                 img {
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
                     border-radius: 20px;
+                    border: 2px solid transparent;
                     @media(max-width: 576px) {
                         border-radius: 10px;
                     }
@@ -1135,6 +1138,7 @@
     .desc {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 100px;
         @media(max-width: 992px) {
             align-items: center;
         }

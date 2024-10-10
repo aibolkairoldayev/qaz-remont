@@ -9,14 +9,14 @@
             height: 85px;
         }
         @media(max-width: 576px) {
-            height: 40px;
+            height: 64px;
         }
         z-index: 210;
         &__content {
             position: relative;
             padding-left: 150px;
             @media(max-width: 480px) {
-                padding-left: 50px;
+                padding-left: 80px;
             }
         }
         &__phone {
@@ -37,7 +37,7 @@
                 height: auto;
             }
             @media(max-width: 576px) {
-                width: 40px;
+                width: 60px;
             }
             img {
                 width: 100%;
@@ -52,7 +52,7 @@
                 align-items: center;
             }
             @media(max-width: 576px) {
-                height: 40px;
+                height: 64px;
             }
             b {
                 color: var(--Orange, #F8B540);
@@ -63,6 +63,7 @@
                 margin-top: 20px;
                 @media(max-width: 992px) {
                     margin-top: 0;
+                    color: #fff;
                 }
             }
         }
@@ -207,7 +208,7 @@
                 height: 85px;
             }
             @media (max-width: 576px) {
-                height: 40px;
+                height: 64px;
             }
             .header {
                 &__content {
@@ -216,7 +217,7 @@
                         padding-left: 150px;
                     }
                     @media (max-width: 576px) {
-                        padding-left: 50px;
+                        padding-left: 80px;
                     }
                 }
                 &__logo {
@@ -225,7 +226,7 @@
                         width: 80px;
                     }
                     @media (max-width: 576px) {
-                        width: 40px;
+                        width: 60px;
                     }
                 }
                 &__top {
@@ -362,16 +363,13 @@
             height: 65px;
             margin-bottom: 23px;
             border-radius: 10px;
+            font-size: 24px;
         }
     }
     &.white {
         .burger {
             &__content {
                 background-color: #E7E7E7;
-            }
-            &__btn {
-                background: #0D0D0D;
-                color: #fff;
             }
         }
         .header {

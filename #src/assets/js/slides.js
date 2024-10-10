@@ -66,7 +66,7 @@ $('.partners__items').slick({
         settings: {
           slidesToShow: 2,      
         }
-      }
+      },
     ],
 });
 

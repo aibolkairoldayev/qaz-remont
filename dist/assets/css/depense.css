@@ -805,7 +805,10 @@
 
 .body .projects__small--item.slick-current {
   border-radius: 20px;
-  border: 3px solid var(--color-2, #FFF);
+}
+
+.body .projects__small--item.slick-current img {
+  border: 2px solid var(--Orange, #F8B540);
 }
 
 .body .projects__small--item img {
@@ -814,6 +817,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+  border: 2px solid transparent;
 }
 
 .body .projects__small .slick-track {
@@ -1400,6 +1404,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .body .desc__img {

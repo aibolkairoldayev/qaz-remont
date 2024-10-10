@@ -727,15 +727,11 @@ body {
   height: 65px;
   margin-bottom: 23px;
   border-radius: 10px;
+  font-size: 24px;
 }
 
 .body.white .burger__content {
   background-color: #E7E7E7;
-}
-
-.body.white .burger__btn {
-  background: #0D0D0D;
-  color: #fff;
 }
 
 .body.white .header {
@@ -1615,6 +1611,7 @@ body {
 
   .body .header__top b {
     margin-top: 0;
+    color: #fff;
   }
 
   .body .header__mode.desktop {
@@ -1722,27 +1719,27 @@ body {
   }
 
   .body .header {
-    height: 40px;
+    height: 64px;
   }
 
   .body .header__logo {
-    width: 40px;
+    width: 60px;
   }
 
   .body .header__top {
-    height: 40px;
+    height: 64px;
   }
 
   .body .header.sticky {
-    height: 40px;
+    height: 64px;
   }
 
   .body .header.sticky .header__content {
-    padding-left: 50px;
+    padding-left: 80px;
   }
 
   .body .header.sticky .header__logo {
-    width: 40px;
+    width: 60px;
   }
 
   .body .burger {
@@ -1845,7 +1842,7 @@ body {
   }
 
   .body .header__content {
-    padding-left: 50px;
+    padding-left: 80px;
   }
 
   .body .calc__content {
