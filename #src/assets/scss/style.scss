@@ -632,10 +632,10 @@
 }
 .dust4 {
     bottom: 0;
-    transform: translateY(300%);
+    transform: translateY(250%);
     max-height: 1000px;
     @media (max-width: 576px) {
-        transform: translateY(400%);
+        transform: translateY(300%);
     }
 }
 

@@ -1474,9 +1474,9 @@ body {
 
 .dust4 {
   bottom: 0;
-  -webkit-transform: translateY(300%);
-      -ms-transform: translateY(300%);
-          transform: translateY(300%);
+  -webkit-transform: translateY(250%);
+      -ms-transform: translateY(250%);
+          transform: translateY(250%);
   max-height: 1000px;
 }
 
@@ -1809,9 +1809,9 @@ body {
   }
 
   .dust4 {
-    -webkit-transform: translateY(400%);
-        -ms-transform: translateY(400%);
-            transform: translateY(400%);
+    -webkit-transform: translateY(300%);
+        -ms-transform: translateY(300%);
+            transform: translateY(300%);
   }
 
   .dust6 {
