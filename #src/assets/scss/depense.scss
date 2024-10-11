@@ -1610,6 +1610,10 @@
         @media(max-width: 992px) {
             min-height: 740px;
         }
+        @media(max-width: 576px) {
+            height: 100vh;
+            min-height: 680px;
+        }
         &__wrapper {
             position: absolute;
             top: 0;
@@ -1648,6 +1652,9 @@
                 flex-direction: column;
                 justify-content: center;
             }
+            @media(max-width: 576px) {
+                padding: 20px;
+            }
         }
         &__left {
             width: 400px;
@@ -1676,6 +1683,9 @@
                 width: 100%;
                 margin-top: 40px;
                 align-items: center;
+            }
+            @media(max-width: 576px) {
+                margin-top: 10px;
             }
             b {
                 color: var(--color-2, #FFF);
@@ -1818,7 +1828,7 @@
             width: 100%;
             height: 70px;
             border-radius: 20px;
-            background-color: #000;
+            background-color: #1d1c1b;
             margin-bottom: 24px;
             @media(max-width: 992px) {
                 height: 40px;                

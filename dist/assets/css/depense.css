@@ -2032,7 +2032,7 @@
   width: 100%;
   height: 70px;
   border-radius: 20px;
-  background-color: #000;
+  background-color: #1d1c1b;
   margin-bottom: 24px;
 }
 
@@ -3494,8 +3494,21 @@
     left: -15px;
   }
 
+  .body .error {
+    height: 100vh;
+    min-height: 680px;
+  }
+
+  .body .error__content {
+    padding: 20px;
+  }
+
   .body .error__left {
     font-size: 150px;
+  }
+
+  .body .error__right {
+    margin-top: 10px;
   }
 
   .body .error__right b {
