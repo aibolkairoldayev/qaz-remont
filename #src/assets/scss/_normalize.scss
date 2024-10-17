@@ -9,7 +9,9 @@ html {
 
 .main {
     min-height: 1000px;
-    
+    @media(max-width: 576px) {
+      min-height: 700px;
+    }
 }
 
 a {
