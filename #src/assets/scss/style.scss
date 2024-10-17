@@ -135,22 +135,22 @@
         }
         &__bg {
             position: absolute;
-            bottom: -20%;
-            left: -50px;
+            bottom: 0;
+            left: 0;
             z-index: -1;
-            max-height: 800px;
+            max-height: 500px;
             @media(max-width: 576px) {
-                max-height: 400px;
+                max-height: 250px;
             }
         }
         &__bg2 {
             position: absolute;
-            top: -20%;
-            right: -50px;
+            top: 0;
+            right: 0;
             z-index: -1;
-            max-height: 800px;
+            max-height: 500px;
             @media(max-width: 576px) {
-                max-height: 400px;
+                max-height: 250px;
             }
         }
         &__close {
@@ -215,7 +215,7 @@
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
-                height: 80%;
+                min-height: 350px;
             }
         }
 
@@ -230,7 +230,7 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 20px;
-                max-height: 600px;
+                max-height: 450px;
             }
         }
         &__title {

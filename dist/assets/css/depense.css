@@ -255,8 +255,8 @@
 }
 
 .body .socials a {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: #171512;
   padding: 5px;
@@ -274,8 +274,8 @@
 }
 
 .body .socials img {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 .body .socials.light {
@@ -3082,14 +3082,7 @@
   }
 
   .body .socials a {
-    width: 40px;
-    height: 40px;
     margin: 0 8px;
-  }
-
-  .body .socials img {
-    width: 25px;
-    height: 25px;
   }
 
   .body .socials {
