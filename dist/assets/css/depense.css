@@ -1127,7 +1127,7 @@
 }
 
 .body .tarif__item.show .tarif__info {
-  overflow: auto;
+  overflow-y: auto;
   max-height: unset;
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
@@ -1142,6 +1142,7 @@
 
 .body .tarif__item .tarif__less {
   display: none;
+  margin-bottom: 0;
 }
 
 .body .tarif__item b {
@@ -1259,7 +1260,7 @@
 .body .tarif__btn img {
   width: 26px;
   height: 12px;
-  margin: 0 0 7px 10px;
+  margin: 0 0 0px 10px;
 }
 
 .body .tarif__items .slick-arrow {
@@ -1303,6 +1304,10 @@
 
 .body .tarif__items .arrowLeft {
   left: -50px;
+}
+
+.body .tarif__more {
+  margin-top: 10px;
 }
 
 .body .faq {

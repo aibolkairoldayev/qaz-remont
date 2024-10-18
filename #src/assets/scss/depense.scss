@@ -869,7 +869,7 @@
                     display: none;
                 }
                 .tarif__info {
-                    overflow: auto;
+                    overflow-y: auto;
                     max-height: unset;
                     transition: .2s linear;
                 }
@@ -881,6 +881,7 @@
             }
             .tarif__less {
                 display: none;
+                margin-bottom: 0;
             }
             b {
                 display: block;
@@ -977,7 +978,7 @@
             img {
                 width: 26px;
                 height: 12px;
-                margin: 0 0 7px 10px;
+                margin: 0 0 0px 10px;
             }
         }
         &__items {
@@ -1023,6 +1024,9 @@
                     left: 0;
                 }
             }
+        }
+        &__more {
+            margin-top: 10px;
         }
     }
     .faq {
