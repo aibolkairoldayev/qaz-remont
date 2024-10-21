@@ -207,7 +207,7 @@
             }
         }
         &__steps {
-            width: 67%;
+            width: 100%;
             @media(max-width: 1200px) {
                 width: 100%;
             }
@@ -222,6 +222,7 @@
         &__img {
             width: 30%;
             height: 100%;
+            display: none;
             @media(max-width: 1200px) {
                 display: none;
             }
@@ -235,6 +236,7 @@
         }
         &__title {
             margin-bottom: 27px;
+            padding-right: 70px;
             @media (max-width: 1200px) {
                 padding-right: 50px;
             }
@@ -445,7 +447,7 @@
     }
     .calc-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px 40px;
         @media (max-width: 768px) {
             grid-template-columns: 1fr 1fr;

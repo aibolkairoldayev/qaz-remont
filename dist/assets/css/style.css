@@ -910,7 +910,7 @@ body {
 }
 
 .body .calc__steps {
-  width: 67%;
+  width: 100%;
 }
 
 .body .calc__steps form {
@@ -930,6 +930,7 @@ body {
 .body .calc__img {
   width: 30%;
   height: 100%;
+  display: none;
 }
 
 .body .calc__img img {
@@ -943,6 +944,7 @@ body {
 
 .body .calc__title {
   margin-bottom: 27px;
+  padding-right: 70px;
 }
 
 .body .calc__row {
@@ -1202,7 +1204,7 @@ body {
 
 .body .calc-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px 40px;
 }
 

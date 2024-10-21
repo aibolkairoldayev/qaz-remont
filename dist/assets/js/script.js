@@ -150,7 +150,21 @@ $(document).ready(function() {
         
         // Добавляем класс active к соответствующему элементу контента
         $('.projects__content--item').eq(index).addClass('active');
+
+        switchMoreLink();
     });
+
+    if ($(".servicesPage").length > 0) {
+        switchMoreLink();
+        function switchMoreLink() {
+            var contentItem = $(".projects__content .projects__content--item.active");
+            if (contentItem.data('count') <= contentItem.children().length) {
+                $(".ProjectMoreLink").hide();
+            } else {
+                $(".ProjectMoreLink").show();
+            }
+        }
+    }
 });
 
 //tarif block item show more in service page
@@ -304,4 +318,9 @@ if ($('.rekviz').length) {
     $('.rekviz__wrapper').click(()=> {
         closeReks()
     })
+}
+
+//methods items grid class
+if ($('.method__item').length == 14) {
+    $('.method__items').addClass('grid14')
 }
