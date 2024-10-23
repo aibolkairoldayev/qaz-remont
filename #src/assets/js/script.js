@@ -154,11 +154,12 @@ $(document).ready(function() {
         switchMoreLink();
     });
 
-    if ($(".servicesPage").length > 0) {
+    if ($(".servicesPage .projects").length > 0) {
         switchMoreLink();
         function switchMoreLink() {
-            var contentItem = $(".projects__content .projects__content--item.active");
-            if (contentItem.data('count') <= contentItem.children().length) {
+            var contentItem = $(".projects__content .projects__content--item.active"),
+                contentKey = contentItem.data('key');
+            if (contentItem.data('count') <= contentItem[contentKey].children.length) {
                 $(".ProjectMoreLink").hide();
             } else {
                 $(".ProjectMoreLink").show();
@@ -324,3 +325,14 @@ if ($('.rekviz').length) {
 if ($('.method__item').length == 14) {
     $('.method__items').addClass('grid14')
 }
+
+//own var show
+$('.calc__item--body input[type=radio]').on('change', function() {
+    var parentBody = $(this).closest('.calc__item--body');
+    
+    parentBody.siblings('.calc__item--bot').removeClass('show');
+    
+    if ($(this).closest('.other-var').length) {
+        parentBody.siblings('.calc__item--bot').addClass('show');
+    }
+});
