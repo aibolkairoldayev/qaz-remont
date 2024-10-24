@@ -752,6 +752,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .body .projects__big .slick-arrow {
@@ -2011,6 +2012,10 @@
   padding: 60px 0;
   min-height: 400px;
   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .body .modal__bg {
@@ -2563,7 +2568,6 @@
 @media (max-width: 1600px) {
   .body .modal__content {
     padding: 37px 0;
-    top: 5%;
   }
 
   .body .modal__btn {

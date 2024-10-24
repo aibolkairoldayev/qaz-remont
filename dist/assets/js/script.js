@@ -336,3 +336,9 @@ $('.calc__item--body input[type=radio]').on('change', function() {
         parentBody.siblings('.calc__item--bot').addClass('show');
     }
 });
+
+//fancybox 
+document.addEventListener("DOMContentLoaded", function() {
+    Fancybox.bind("[data-fancybox]", {
+    });
+});
