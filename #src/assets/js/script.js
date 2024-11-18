@@ -346,6 +346,115 @@ $(document).ready(function() {
     });
 });
 
+//main page whyus block stars animation start
+document.addEventListener("DOMContentLoaded", function () {
+    const whyusSection = document.querySelector(".whyus");
+    const items = document.querySelectorAll(".whyus__items .whyus__item img, .whyus__items .whyus__item b");
+  
+    if (whyusSection) {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Если секция появилась в зоне видимости, запускаем анимацию
+              items.forEach((item, index) => {
+                setTimeout(() => {
+                  item.classList.add("fade-in");
+                }, index * 500);
+              });
+  
+              // После старта анимации отключаем наблюдатель
+              observer.disconnect();
+            }
+          });
+        },
+        { threshold: 0.1 } // Секция считается видимой, если 10% её высоты пересекает экран
+      );
+  
+      observer.observe(whyusSection);
+    }
+});
+  
+//main page about block text animation start 
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutContent = document.querySelector(".about__content");
+  
+    if (aboutContent) {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    aboutContent.classList.add("slide-in-right");
+                  }, 300);
+              observer.disconnect();
+            }
+          });
+        },
+        { threshold: 0.1 } // Срабатывает, когда 10% элемента появляется в зоне видимости
+      );
+  
+      observer.observe(aboutContent);
+    }
+  });
+  
+//service page razmer block animation start
+document.addEventListener("DOMContentLoaded", function () {
+    const mebelSection = document.querySelector(".mebel__title");
+    const items = document.querySelectorAll(".mebel__item");
+  
+    if (mebelSection) {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Если секция появилась в зоне видимости, запускаем анимацию
+              items.forEach((item, index) => {
+                setTimeout(() => {
+                  item.classList.add("fade-in");
+                }, index * 500);
+              });
+  
+              // После старта анимации отключаем наблюдатель
+              observer.disconnect();
+            }
+          });
+        },
+        { threshold: 0.1 } // Секция считается видимой, если 10% её высоты пересекает экран
+      );
+  
+      observer.observe(mebelSection);
+    }
+});
+
+//service page steps block animation start
+document.addEventListener("DOMContentLoaded", function () {
+    const stepsSection = document.querySelector(".steps__title");
+    const items = document.querySelectorAll(".steps__items li");
+  
+    if (stepsSection) {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Если секция появилась в зоне видимости, запускаем анимацию
+              items.forEach((item, index) => {
+                setTimeout(() => {
+                  item.classList.add("fade-in");
+                }, index * 500);
+              });
+  
+              // После старта анимации отключаем наблюдатель
+              observer.disconnect();
+            }
+          });
+        },
+        { threshold: 0.1 } // Секция считается видимой, если 10% её высоты пересекает экран
+      );
+  
+      observer.observe(stepsSection);
+    }
+});
 
 //fancybox 
 document.addEventListener("DOMContentLoaded", function() {

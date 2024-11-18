@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .body .banner {
   height: 890px;
   z-index: 2;
@@ -276,6 +278,23 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 0;
+  -webkit-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+          transform: translateX(300px);
+  /* Элемент находится за пределами экрана справа */
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
+  transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
+  -o-transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.body .about__content.slide-in-right {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .body .about__content p {
@@ -400,6 +419,12 @@
 .body .whyus__item img {
   width: 55px;
   height: 55px;
+  opacity: 0;
+}
+
+.body .whyus__item img.fade-in {
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
 }
 
 .body .whyus__item b {
@@ -410,6 +435,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  opacity: 0;
+}
+
+.body .whyus__item b.fade-in {
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
 }
 
 .body .whyus__item p {
@@ -1141,6 +1172,58 @@
 
 .body.white .appl__title.main-title {
   color: #fff;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.whyus__item:nth-child(1) .fade-in {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.whyus__item:nth-child(2) .fade-in {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.whyus__item:nth-child(3) .fade-in {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.whyus__item:nth-child(4) .fade-in {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.whyus__item:nth-child(5) .fade-in {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.whyus__item:nth-child(6) .fade-in {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.whyus__item:nth-child(7) .fade-in {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.whyus__item:nth-child(8) .fade-in {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 @media (max-width: 1200px) {

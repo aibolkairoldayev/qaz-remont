@@ -399,6 +399,13 @@
         &__item {
             width: 100%;
             max-width: 590px;
+            &:first-child {
+                .projects__small {
+                    .slick-track {
+                        transform: translate3d(-20px, 0px, 0px) !important;
+                    }
+                }
+            }
             @media(max-width: 1200px) {
                 max-width: 460px;
             }
@@ -519,6 +526,10 @@
             }
         }
         &__small {
+            width: 100%;
+            .slick-list {
+                width: 100%;
+            }
             &--item {
                 height: 94px;
                 margin: 0 15px;
@@ -1040,6 +1051,10 @@
             li {
                 position: relative;
                 padding-left: 40px;
+                opacity: 0;
+                &.fade-in {
+                    animation: fadeIn 1s forwards;
+                }
                 &::before {
                     content: url(../images/icons/star.svg);
                     position: absolute;
@@ -1361,6 +1376,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            opacity: 0;
+            &.fade-in {
+                animation: fadeIn 1s forwards;
+            }
             @media(max-width: 576px) {
                 flex-direction: column;
                 margin-bottom: 20px;
@@ -2762,3 +2781,4 @@
 .fade-in:nth-child(8) {
     animation-delay: 7s;
 }
+

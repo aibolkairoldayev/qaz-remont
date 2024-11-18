@@ -312,6 +312,13 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            opacity: 0;
+            transform: translateX(300px); /* Элемент находится за пределами экрана справа */
+            transition: opacity 0.8s ease, transform 0.8s ease;
+            &.slide-in-right {
+                opacity: 1;
+                transform: translateX(0);
+            }
             @media (max-width: 992px) {
                 width: 100%;
             }
@@ -452,6 +459,10 @@
             img {
                 width: 55px;
                 height: 55px;
+                opacity: 0;
+                &.fade-in {
+                    animation: fadeIn 1s forwards;
+                }
             }
             b {
                 display: block;
@@ -461,6 +472,10 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                opacity: 0;
+                &.fade-in {
+                    animation: fadeIn 1s forwards;
+                }
                 @media (max-width: 576px) {
                     font-size: 18px;
                 }
@@ -1275,4 +1290,35 @@
             }
         }
     }
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+.whyus__item:nth-child(1) .fade-in {
+    animation-delay: 0s;
+}
+.whyus__item:nth-child(2) .fade-in {
+    animation-delay: 1s;
+}
+.whyus__item:nth-child(3) .fade-in {
+    animation-delay: 2s;
+}
+.whyus__item:nth-child(4) .fade-in {
+    animation-delay: 3s;
+}
+.whyus__item:nth-child(5) .fade-in {
+    animation-delay: 4s;
+}
+.whyus__item:nth-child(6) .fade-in {
+    animation-delay: 5s;
+}
+.whyus__item:nth-child(7) .fade-in {
+    animation-delay: 6s;
+}
+.whyus__item:nth-child(8) .fade-in {
+    animation-delay: 7s;
 }
