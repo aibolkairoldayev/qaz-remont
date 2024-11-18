@@ -287,7 +287,6 @@ $(window).scroll(function(){
 
 // main banner in main page arrows margin
 $(document).ready(function() {
-    console.log('ss');
     
     let ww = $(window).width()
     let cw = $('.container').width()
@@ -336,6 +335,17 @@ $('.calc__item--body input[type=radio]').on('change', function() {
         parentBody.siblings('.calc__item--bot').addClass('show');
     }
 });
+
+//service page stars animation start
+$(document).ready(function() {
+    $('.banner2__adv.desktop li').each(function(index) {
+      $(this).delay(index * 500).queue(function(next) {
+        $(this).addClass('fade-in'); // Добавляем класс fade-in
+        next();
+      });
+    });
+});
+
 
 //fancybox 
 document.addEventListener("DOMContentLoaded", function() {
