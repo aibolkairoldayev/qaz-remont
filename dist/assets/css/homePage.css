@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 .body .banner {
   height: 890px;
   z-index: 2;
@@ -247,6 +245,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .body .about__img {
@@ -282,7 +281,6 @@
   -webkit-transform: translateX(300px);
       -ms-transform: translateX(300px);
           transform: translateX(300px);
-  /* Элемент находится за пределами экрана справа */
   -webkit-transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
   transition: opacity 0.8s ease, -webkit-transform 0.8s ease;
   -o-transition: opacity 0.8s ease, transform 0.8s ease;
@@ -394,6 +392,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 0;
+}
+
+.body .whyus__item.fade-in {
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
 }
 
 .body .whyus__item:nth-child(1) {
@@ -419,12 +423,6 @@
 .body .whyus__item img {
   width: 55px;
   height: 55px;
-  opacity: 0;
-}
-
-.body .whyus__item img.fade-in {
-  -webkit-animation: fadeIn 1s forwards;
-          animation: fadeIn 1s forwards;
 }
 
 .body .whyus__item b {
@@ -435,12 +433,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  opacity: 0;
-}
-
-.body .whyus__item b.fade-in {
-  -webkit-animation: fadeIn 1s forwards;
-          animation: fadeIn 1s forwards;
 }
 
 .body .whyus__item p {

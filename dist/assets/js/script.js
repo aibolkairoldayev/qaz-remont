@@ -338,7 +338,7 @@ $('.calc__item--body input[type=radio]').on('change', function() {
 
 //service page stars animation start
 $(document).ready(function() {
-    $('.banner2__adv.desktop li').each(function(index) {
+    $('.banner2__adv li').each(function(index) {
       $(this).delay(index * 500).queue(function(next) {
         $(this).addClass('fade-in'); // Добавляем класс fade-in
         next();
@@ -349,7 +349,7 @@ $(document).ready(function() {
 //main page whyus block stars animation start
 document.addEventListener("DOMContentLoaded", function () {
     const whyusSection = document.querySelector(".whyus");
-    const items = document.querySelectorAll(".whyus__items .whyus__item img, .whyus__items .whyus__item b");
+    const items = document.querySelectorAll(".whyus__item");
   
     if (whyusSection) {
       const observer = new IntersectionObserver(

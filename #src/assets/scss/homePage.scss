@@ -275,6 +275,7 @@
     .about {
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
         @media (max-width: 992px) {
             flex-direction: column;
         }
@@ -313,7 +314,7 @@
             flex-direction: column;
             justify-content: space-between;
             opacity: 0;
-            transform: translateX(300px); /* Элемент находится за пределами экрана справа */
+            transform: translateX(300px); 
             transition: opacity 0.8s ease, transform 0.8s ease;
             &.slide-in-right {
                 opacity: 1;
@@ -426,6 +427,10 @@
         &__item {
             display: flex;
             flex-direction: column;
+            opacity: 0;
+            &.fade-in {
+                animation: fadeIn 1s forwards;
+            }
             &:nth-child(1) {
                 grid-area: 1 / 1 / 3 / 3;
                 @media (max-width: 768px) {
@@ -459,10 +464,6 @@
             img {
                 width: 55px;
                 height: 55px;
-                opacity: 0;
-                &.fade-in {
-                    animation: fadeIn 1s forwards;
-                }
             }
             b {
                 display: block;
@@ -472,10 +473,6 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                opacity: 0;
-                &.fade-in {
-                    animation: fadeIn 1s forwards;
-                }
                 @media (max-width: 576px) {
                     font-size: 18px;
                 }
