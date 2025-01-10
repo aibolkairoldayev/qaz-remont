@@ -611,12 +611,14 @@ body {
 }
 
 .body .header.sticky .header__menu li {
-  max-width: 110px;
+  width: 110px;
   margin-right: 20px;
 }
 
 .body .header.sticky .header__menu a {
   font-size: 13px;
+  display: block;
+  max-width: 70px;
 }
 
 .body .header.sticky .header__right a {
